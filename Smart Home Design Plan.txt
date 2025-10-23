@@ -1,0 +1,15 @@
+Smart Home Design Plan
+
+Turning On and Off a light
+1. Web/Client side: Send a form to the backend to turn on or off the light. 
+2. Server: Inteprets the form data and sends a UART message to the embedded device.
+3. MCU: Interprets UART data, checks the current state of the light, then performs the request if necessary, then confirms the current state.
+        Sends a UART message back to the server to confirm success or fail.
+4. Server: Recieve data from MCU, updates the state of the light in a database and sends a response back to the client/Website.
+
+Checking the light is On or Off
+Checks the current state of the light by reading from the database.
+1. Client side: Send a form to the backend to check the state of the light.
+2. Server: Reads the state of the light from the database. Sends the data to the client.
+3. Client: Updates the information displayed if required. 
+
