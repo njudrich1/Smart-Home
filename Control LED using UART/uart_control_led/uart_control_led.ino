@@ -32,18 +32,24 @@ int main(void)
 	DDRB |= 1 << 7;  // Debug LED
 	unsigned int MYUBRR = (FOSC/16/BAUD-1);  // Baud Rate calculation: 0x67
 	init_uart0(MYUBRR); 
+  PORTB &= ~(1<<7);  // Debug LED
 
   while(1)
   {
-		PORTB &= ~(1<<7);  // Debug LED
+		//PORTB &= ~(1<<7);  // Debug LED
 
 		unsigned char data = USART_Receive();
-		unsigned char rx = 'x';
-		if (data)
+		if (data == 'o')
 		{
-			USART_Transmit(rx);
+			USART_Transmit(data);
 			PORTB |= 1 << 7;  // Debug LED
 		}
+    
+    if (data == 'f')
+    {
+      USART_Transmit(data);
+			PORTB &= ~(1<<7);
+    }
 		_delay_ms(100);
   }
   return 0;
