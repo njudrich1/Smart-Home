@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Smart Home</title>
+</head>
+<body>
+
+<h1>Your Smart Home</h1>
+<h2>Light Switch Control</h2>
+<!-- 
+1. Create Light Source and set initial value in a DB
+1. Send a form to the backend to turn on or off the light. 
+2. Checks the state of the light and updates the database on the current state of the light.
+3. The website reads from the database and updates the website. -->
+<form id="button_test" method="post">
+	{% csrf_token %}
+	<label>Light On:</label>
+	<input type="radio" id="id_on_state" name="light_state" value="on">
+	<label>Light Off:</label>
+	<input type="radio" id="id_off_state" name="light_state" value="off" checked>
+	<button value="turn_on">Submit</button>
+</form>
+<!-- <p>The light is INPUT DB DATA.</p>
+
+</body>
+</html>
