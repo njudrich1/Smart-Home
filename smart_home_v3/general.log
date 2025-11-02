@@ -1,0 +1,92 @@
+1
+1
+1
+2
+<QueryDict: {'csrfmiddlewaretoken': ['gDmkPNqW8Thqyr8wAB26a9hTjXDW2PJ1Ta6Iczh7ILqOBc8CzTojqtBUaHPBv5ir'], 'device_name': ['fish'], 'new_device_name': ['cheese'], 'new_device_type': ['Lock']}>
+1
+1
+1
+2
+<QueryDict: {'csrfmiddlewaretoken': ['5X0OIdhZLgV4YUmqGWRm4DsKRKGo7rqOIuKc5Z8al84s1FmwFedzkXMLIuS3AHZe'], 'device_name': ['fish'], 'new_device_name': ['monkey'], 'new_device_type': ['Lock']}>
+1
+1
+2
+<QueryDict: {'csrfmiddlewaretoken': ['P6t2RgSo71FoRWTireOj4w5J3dHOugMWsDdqe2JzHTOMUHToqwawkQpKUXTtXwlm'], 'device_name': ['Bob'], 'new_device_name': ['lamp'], 'new_device_type': ['Light']}>
+3
+<QuerySet [<Devices: Devices object (1)>]>
+1
+1
+2
+<QueryDict: {'csrfmiddlewaretoken': ['A3ULusfi47wLbGigKvNO11CmMYC0YpLRdAE9Re6tEZF9erimJN91hlWnDIOFrFkh'], 'device_name': ['Bob'], 'new_device_name': ['kiwi'], 'new_device_type': ['Lock']}>
+3
+1
+1
+2
+<QueryDict: {'csrfmiddlewaretoken': ['jIpdzpAeBTcx4gUVZNlEAQ8UTby8uTGvWf9BWbrpbLlV71U1Y5HRQasVKVKNX9fV'], 'device_name': ['Bob'], 'new_device_name': ['jungle'], 'new_device_type': ['Camera']}>
+3
+1
+1
+2
+<QueryDict: {'csrfmiddlewaretoken': ['KJ8pAcscG1p7Am2RJbPmScDnINUx21MSngSNXYjngTyvD72XItbz8wXozx6cvhli'], 'device_name': ['Bob'], 'new_device_name': ['tissue'], 'new_device_type': ['Lock']}>
+3
+1
+1
+2
+<QueryDict: {'csrfmiddlewaretoken': ['SUU2E77bx2gVAI78z10doMIXq2WqfRmCvrEq1TYm7UpjDt7eyjmqE62YhM85I7V2'], 'device_name': ['Bob'], 'new_device_name': ['vfdbd'], 'new_device_type': ['Light']}>
+3
+Current obj: <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'light'}]>
+1
+1
+2
+<QueryDict: {'csrfmiddlewaretoken': ['xbZO0AYuWmwrCYMFacZWvc5BV6c9HfjHaIJcnmPFweFPFJML9ul9LwpCMQoOavS7'], 'device_name': ['Bob'], 'new_device_name': ['sdfsfd'], 'new_device_type': ['Light']}>
+3
+Current obj: {'id': 1, 'device_name': 'Bob', 'device_type': 'light'}
+1
+1
+2
+<QueryDict: {'csrfmiddlewaretoken': ['bGR00zqSjTOLJtnJ649Nikh8UBoZOTEIOdBonlh3TLX9MenP5mv0yEB9LlAEh9d8'], 'device_name': ['Bob'], 'new_device_name': ['dasdasd'], 'new_device_type': ['Lock']}>
+3
+1
+1
+2
+<QueryDict: {'csrfmiddlewaretoken': ['7Sdk540FqzTPLrNSG24nTgK6t8fqlmFfKpXIsQRQ0r2dOcNYFkqA9A47kSr5OCeF'], 'device_name': ['Bob'], 'new_device_name': ['fwfsdffsed'], 'new_device_type': ['Light']}>
+3
+1
+1
+2
+<QueryDict: {'csrfmiddlewaretoken': ['tlHLMRVGaz9WnhxH2JNXZT5YyFHwciwk6Sr99DMRKrikq2xN119afdpZppTbFy5K'], 'device_name': ['Bob'], 'new_device_name': ['iiiiiii'], 'new_device_type': ['Light']}>
+3
+Current obj: {'id': 1, 'device_name': 'Bob', 'device_type': 'light'}
+1
+1
+2
+<QueryDict: {'csrfmiddlewaretoken': ['HKR50TfxXnmnf8oE7z0Y0tp46hPYhF0CkhBtnF6IxfvLiToK6RmbgNJ5X11DKVz2'], 'device_name': ['fish'], 'new_device_name': ['Mark'], 'new_device_type': ['Lock']}>
+3
+1
+1
+1
+1
+1
+<WSGIRequest: GET '/control_panel/'>
+Request Method: GET
+Request POST: <QueryDict: {}>
+1
+<WSGIRequest: GET '/control_panel/'>
+Request Method: GET
+Request POST: <QueryDict: {}>
+1
+<WSGIRequest: GET '/control_panel/'>
+Request Method: GET
+Request POST: <QueryDict: {}>
+1
+<WSGIRequest: GET '/control_panel/'>
+Request Method: GET
+Request POST: <QueryDict: {}>
+1
+<WSGIRequest: GET '/control_panel/'>
+Request Method: GET
+Request POST: <QueryDict: {}>
+1
+<WSGIRequest: POST '/control_panel/'>
+Request Method: POST
+Request POST: <QueryDict: {'csrfmiddlewaretoken': ['0EyvyywUEOtJ2KkXSqFepAfgr7YYvLXTDbiTVkn5eGC75vk3RI1rFUzhiRaDY1wj'], 'device_name': ['Bob'], 'device_type': ['light'], 'light_state': ['on']}>

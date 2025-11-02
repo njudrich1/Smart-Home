@@ -1,0 +1,29 @@
+{% extends "base_template.html" %}
+
+{% block content %}
+<h2>Control Panel</h2>
+
+<form id="button_test" method="post">
+  {% csrf_token %}
+  <select id="id_device_name" name="device_name">
+    {% for x in all_devices %}
+      <option value="{{x.device_name}}">{{ x.device_name }}</option>
+    {% endfor %}
+  </select>
+  <select id="id_device_type" name="device_type">
+    {% for x in all_devices %}
+      <option value="{{x.device_type}}">{{ x.device_type }}</option>
+    {% endfor %}
+  </select>
+  <br>
+  <label>Light On:</label>
+  <input type="radio" id="id_on_state" name="light_state" value="on">
+  <label>Light Off:</label>
+  <input type="radio" id="id_off_state" name="light_state" value="off">
+  <button value="turn_on">Submit</button>
+</form>
+<p>The light is {{ light_state }}</p>
+
+<a href="/">Home</a>
+
+{% endblock %}

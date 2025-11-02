@@ -1,0 +1,25 @@
+{% extends "base_template.html" %}
+
+{% block content %}
+
+<h2>Display Devices</h2>
+<p>The queryset object:</p>
+{{ all_devices }}
+
+
+<form id="remove_device" method="post">
+  {% csrf_token %}
+  <select id="id_device_name" name="device_name">
+    {% for x in all_devices %}
+      <option value="{{x.device_name}}">{{ x.device_name }}</option>
+    {% endfor %}
+  </select>
+  <button value="remove_confirmation">Remove Device</button>
+</form>
+
+</body>
+</html>
+
+<a href="/">Home</a>
+
+{% endblock %}
