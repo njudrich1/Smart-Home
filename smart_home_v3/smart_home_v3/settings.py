@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'smart_home.apps.SmartHomeConfig',
     'devices.apps.DevicesConfig',
     'control_panel.apps.ControlPanelConfig',
     'django.contrib.admin',
@@ -113,6 +114,10 @@ LOGGING = {
     },
     "loggers": {
         "devices.views": {
+            "level": "DEBUG",
+            "handlers": ["file"],
+        },
+        "control_panel.views": {
             "level": "DEBUG",
             "handlers": ["file"],
         },

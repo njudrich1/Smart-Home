@@ -16,13 +16,10 @@
     {% endfor %}
   </select>
   <br>
-  <label>Light On:</label>
-  <input type="radio" id="id_on_state" name="light_state" value="on">
-  <label>Light Off:</label>
-  <input type="radio" id="id_off_state" name="light_state" value="off">
-  <button value="turn_on">Submit</button>
+  {% block controller %}
+  {% endblock %}
 </form>
-<p>The light is {{ light_state }}</p>
+
 
 <a href="/">Home</a>
 

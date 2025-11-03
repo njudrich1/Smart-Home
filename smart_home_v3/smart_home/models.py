@@ -1,3 +1,3 @@
 from django.db import models
-from devices.models import Devices
+
 # Create your models here.
