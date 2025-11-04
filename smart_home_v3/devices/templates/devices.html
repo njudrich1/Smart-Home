@@ -1,6 +1,6 @@
-{% extends "base_template.html" %}
+{% extends "base_device_template.html" %}
 
-{% block content %}
+{% block device %}
 
 <h2>Display System</h2>
 <p>The queryset object:</p>
@@ -17,12 +17,10 @@
   {% for x in all_devices %}
     <tr>
       <td>{{ x.id }}</td>
-      <td>{{ x.device_name }}</td>
+      <td><a href="details/{{ x.id }}">{{ x.device_name }}</a></td>
       <td>{{ x.device_type }}</td>
     </tr>
   {% endfor %}
 </table>
-
-<a href="/">Home</a>
 
 {% endblock %}

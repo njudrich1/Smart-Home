@@ -15,12 +15,19 @@ def add_device(request):
 
 	return render(request, 'add_device.html', {})
 
-def display_system(request):
+def device_list(request):
 	all_devices = Devices.objects.all().values()
 	device_dict = {
 		"all_devices": all_devices, 
 	}
-	return render(request, 'display_system.html', device_dict)
+	return render(request, 'devices.html', device_dict)
+
+def device_details(request, id):
+	device_details = Devices.objects.get(id=id)
+	device_dict = {
+		"device_details": device_details, 
+	}
+	return render(request, 'details.html', device_dict)
 
 def remove_device(request):
 	all_devices = Devices.objects.all().values()

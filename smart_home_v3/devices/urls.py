@@ -20,7 +20,8 @@ from . import views
 
 urlpatterns = [
     path('add_device/', views.add_device, name="add_device"),
-    path('display_system/', views.display_system, name="display_system"),
+    path('devices/', views.device_list, name="device_list"),
+    path('devices/details/<int:id>', views.device_details, name="device_details"),
     path('remove_device/', views.remove_device, name="remove_device"),
     path('update_device/', views.update_device, name="update_device"),
 ]

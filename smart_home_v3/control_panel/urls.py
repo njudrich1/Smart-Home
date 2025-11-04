@@ -19,5 +19,5 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('light_controller/', views.light_controller, name="light_controller"),
+    path('controller_selector/', views.controller_selector, name="controller_selector"),
 ]

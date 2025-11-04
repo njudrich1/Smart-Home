@@ -3,24 +3,26 @@
 {% block content %}
 <h2>Control Panel</h2>
 
-<form id="button_test" method="post">
+{% block controller_title %}
+<p>Select a Device:</p>
+{% endblock %}
+
+<form id="select_device" method="post">
   {% csrf_token %}
-  <select id="id_device_name" name="device_name">
+  <select id="id_device_id" name="device_id" >
     {% for x in all_devices %}
-      <option value="{{x.device_name}}">{{ x.device_name }}</option>
+      <option value="{{x.id}}">{{ x.device_name }}</option>
     {% endfor %}
   </select>
-  <select id="id_device_type" name="device_type">
-    {% for x in all_devices %}
-      <option value="{{x.device_type}}">{{ x.device_type }}</option>
-    {% endfor %}
-  </select>
-  <br>
-  {% block controller %}
-  {% endblock %}
+  <button value="btn_device_id">Select</button>
 </form>
+   
+<br>
 
+{% block controller %}
+{% endblock %}
 
+<br>
 <a href="/">Home</a>
 
 {% endblock %}

@@ -1,6 +1,6 @@
-{% extends "base_template.html" %}
+{% extends "base_device_template.html" %}
 
-{% block content %}
+{% block device %}
 <h2>Add Device</h2>
 <form id="add_device" method="post">
   {% csrf_token %}
@@ -14,7 +14,5 @@
   </select>
   <button value="device_confirmation">Add Device</button>
 </form>
-
-<a href="/">Home</a>
 
 {% endblock %}
