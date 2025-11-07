@@ -6,14 +6,16 @@
 <form id="update_device" method="post">
   {% csrf_token %}
   <label>Select Device:</label>
-  <select id="id_device_name" name="device_name">
+  <select id="id_device_name" name="device_id">
     {% for x in all_devices %}
-      <option value="{{x.device_name}}">{{ x.device_name }}</option>
+      <option value="{{x.id}}">{{ x.device_name }}</option>
     {% endfor %}
   </select>
   <br>
+
   <label>New Name:</label>
-  <input type="text" id="id_new_device_name" name="new_device_name">
+  <input type="text" id="id_new_device_name" name="new_device_name" required>
+
   <label for="id_new_device_type">New Type:</label>
   <select id="id_new_device_type" name="new_device_type">
     <option value="Light">Light</option>
@@ -22,5 +24,15 @@
   </select>
   <button value="update_confirmation">Update Device</button>
 </form>
+
+{% if updated_name and updated_type %}
+<p>The name and type of the device has been updated.</p>
+{% elif updated_name %}
+<p>The name of the device has been updated.</p>
+{% elif updated_type %}
+<p>The type of the device has been updated.</p>
+{% else %}
+<p></p>
+{% endif %}
 
 {% endblock %}

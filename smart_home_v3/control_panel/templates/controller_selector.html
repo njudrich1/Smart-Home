@@ -14,25 +14,35 @@
 {% endblock %}
 
 {% block controller %}
-<p>Device Name: {{ selected_device.device_name }}</p>
-<p>Device type: {{ selected_device.device_type }}</p>
+{% if device_selected %}
+  <p>Device Name: {{ device.name }}</p>
+  <p>Device type: {{ device.type }}</p>
 
-{% if controller == 'light_controller' %}
-  <label>Light On:</label>
-  <input type="radio" id="id_on_state" name="light_state" value="on">
-  <label>Light Off:</label>
-  <input type="radio" id="id_off_state" name="light_state" value="off">
-  <button value="turn_on">Submit</button>
-{% elif controller == 'lock_controller' %}
-  <label>Lock:</label>
-  <input type="radio" id="id_locked_state" name="lock_state" value="lock">
-  <label>Unlock:</label>
-  <input type="radio" id="id_unlocked_state" name="lock_state" value="unlock">
-  <button value="submit_lock_state">Submit</button>
-{% elif controller == 'camera_controller' %}
-  <p>TBC</p>
-{% else %}
-<p></p>
+  <form id="control_device" method="post">
+    {% csrf_token %}
+    {% if controller == 'light_controller' %}
+      <label>Light On:</label>
+      <input type="radio" id="id_on_state" name="device_state" value="on">
+      <label>Light Off:</label>
+      <input type="radio" id="id_off_state" name="device_state" value="off">
+      <button value="turn_on">Submit</button>
+    {% elif controller == 'lock_controller' %}
+      <label>Lock:</label>
+      <input type="radio" id="id_locked_state" name="device_state" value="lock">
+      <label>Unlock:</label>
+      <input type="radio" id="id_unlocked_state" name="device_state" value="unlock">
+      <button value="submit_lock_state">Submit</button>
+    {% elif controller == 'camera_controller' %}
+      <p>TBC</p>
+    {% else %}
+      <p></p>
+    {% endif %}
+  </form>
+
+  {% if confirm_device_state %}
+    <p>The device state is: {{device.state}} </p>
+  {% endif %}
+
 {% endif %}
 
 {% endblock %}

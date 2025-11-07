@@ -5,35 +5,66 @@ from .models import Devices
 import logging
 logger = logging.getLogger(__name__)
 
+cache = {
+    "controller": "",
+    "device": {
+        "name": "",
+        "type": "",
+    },
+    "device_selected": False,
+}
+
 # Create your views here.
 def controller_selector(request):
     all_devices = Devices.objects.all().values()
-    controller = {}
-    selected_device = {"device_name": "", "device_type": ""}
     device_dict = {
         "all_devices": all_devices,
-        "controller": controller,
-        "selected_device" : selected_device,
+        "controller": {},
+        "device" : {
+            "name": "", 
+            "type": "", 
+            "state": "",
+        },
+        "device_selected": False,
+        "confirm_device_state": False
     }
-    logger.debug("1")
-    logger.debug(f"device_dict: {device_dict}")
-    logger.debug(request)
-    logger.debug(f"Request Method: {request.method}")
-    logger.debug(f"Request POST: {request.POST}")
     if request.method == 'POST':
-        device_id = request.POST['device_id']
-        device_selected = _identify_selected_device(device_id)
-        logger.debug("2")
-        logger.debug(f"Device Name: {device_selected.device_name}")
-        logger.debug(f"Device Type: {device_selected.device_type}")
-        controller = _identify_device_controller(device_selected)
-        if controller:
-            device_dict['controller'] = controller
-            device_dict['selected_device']['device_name'] = device_selected.device_name
-            device_dict['selected_device']['device_type'] = device_selected.device_type 
-            logger.debug(f"device dict: {device_dict}")
+        logger.debug(request.POST)
+        if 'device_id' in request.POST:
+            device_id = request.POST['device_id']
+            device_selected = _identify_selected_device(device_id)
+            controller = _identify_device_controller(device_selected)
+            if controller:
+                device_dict['controller'] = controller
+                device_dict['device']['name'] = device_selected.device_name
+                device_dict['device']['type'] = device_selected.device_type
+                device_dict['device_selected'] = True
+                cache['device_selected'] = device_dict['device_selected']
+                cache["controller"] = controller
+                cache["device"]["name"] = device_selected.device_name
+                cache["device"]["type"] = device_selected.device_type
+                logger.debug("1")
+        if 'device_state' in request.POST:
+            # TODO Retrieve device status from DB and update accordingly.
+            device_state = request.POST['device_state']
+            device_dict['device']['state'] = device_state 
+            device_dict['controller'] = cache["controller"]
+            device_dict['device']['name'] = cache["device"]["name"]
+            device_dict['device']['type'] = cache["device"]["type"]
+            device_dict['device_selected'] = cache['device_selected']
+            device_dict['confirm_device_state'] = True
+            process_data(device_dict)
+        logger.debug(f"device dict: {device_dict}")
 
     return render(request, 'controller_selector.html', device_dict)
+
+def process_data(device_data):
+    if device_data['controller'] == 'light_controller':
+        if device_data['device']['state'] == "on":
+            logger.debug("encode ON data and send")
+        if device_data['device']['state'] == "off":
+            logger.debug("encode OFF data and send")
+
 
 # def light_controller(request):
 #     all_devices = Devices.objects.all().values()

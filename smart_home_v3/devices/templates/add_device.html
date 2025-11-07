@@ -15,4 +15,8 @@
   <button value="device_confirmation">Add Device</button>
 </form>
 
+{% if device_added %}
+<p>The device <b>{{device.name}}</b> of type <b>{{device.type}}</b> has been created.</p>
+{% endif %}
+
 {% endblock %}

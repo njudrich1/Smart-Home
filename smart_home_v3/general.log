@@ -1,519 +1,45 @@
 
+
 1
-device_dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'selected_device': {}}
+1
+2
+<QueryDict: {'csrfmiddlewaretoken': ['PmajrrgaLSYQf2mU18JnfXJLZtOlW9aPsTUHOd7llK7eiNm00q5Avh3MQd00ppJf'], 'device_id': ['1'], 'new_device_name': ['Fish'], 'new_device_type': ['Light']}>
+3
+1
+2
+<QueryDict: {'csrfmiddlewaretoken': ['7RK4ugePgY6sryjKg8dkWNrNGVqrBCbWKousR250QQfQujjQfqzxc7LOxFC64SKm'], 'device_id': ['1'], 'new_device_name': ['Fish'], 'new_device_type': ['Lock']}>
+3
+<QueryDict: {'csrfmiddlewaretoken': ['obEggFg6kBD8riblAC0jwbeatfMCSqem1IoEDr7hUtMwu3brzUmwMvybkZYhlGNM'], 'device_id': ['10']}>
+<QueryDict: {'csrfmiddlewaretoken': ['BnlsU9fsUOLLTeWtJmjMVN4T67ErxvW4eU5QhV6DuGU9WZWzIEFZb7oUXRQ60Lvu'], 'device_id': ['10']}>
+<QueryDict: {'csrfmiddlewaretoken': ['ZbwleTnNwm7UCEaLDErZSLlrt34FvZb9CIgJBFeY6egiFpaRCWNc85FskNgkYfKz'], 'device_id': ['8']}>
+1
+device_dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': {}, 'selected_device': {'device_name': '', 'device_type': ''}}
 <WSGIRequest: GET '/controller_selector/'>
 Request Method: GET
 Request POST: <QueryDict: {}>
 1
-device_dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'selected_device': {}}
-<WSGIRequest: GET '/controller_selector/'>
-Request Method: GET
-Request POST: <QueryDict: {}>
-1
-device_dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'selected_device': {}}
+device_dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': {}, 'selected_device': {'device_name': '', 'device_type': ''}}
 <WSGIRequest: POST '/controller_selector/'>
 Request Method: POST
-Request POST: <QueryDict: {'csrfmiddlewaretoken': ['V1CDQefE3Mm4SWe3iFbUiih4R6g2YZwuyym1d06PDEvsVHe9hXx7yCB5IQsHrf5U'], 'device_id': ['1']}>
+Request POST: <QueryDict: {'csrfmiddlewaretoken': ['5vYVbYkcQkjMJUAl3xgFcWsSZKAF7IdbI2IjyKbnqcsaMFAr2PCSsgMTQuMkAYMB'], 'device_id': ['1']}>
 BEGIN: _identify_selected_device
 Device id: 1
 Device Selected: Devices object (1)
-Device Type: Camera
-END: _identify_selected_device
-BEGIN: _identify_device_controller
-Camera TBC
-Controller Selected: camera_controller
-END: _identify_device_controller
-1
-device_dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'selected_device': {}}
-<WSGIRequest: GET '/controller_selector/'>
-Request Method: GET
-Request POST: <QueryDict: {}>
-1
-device_dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'selected_device': {}}
-<WSGIRequest: POST '/controller_selector/'>
-Request Method: POST
-Request POST: <QueryDict: {'csrfmiddlewaretoken': ['27EFV7cQ4VCAON7Seh8hx5cJrB4P1bJtFEo3iT31ENLYRy7YdzuuNpwKilguuriT'], 'device_id': ['1']}>
-BEGIN: _identify_selected_device
-Device id: 1
-Device Selected: Devices object (1)
-Device Type: Camera
-END: _identify_selected_device
-BEGIN: _identify_device_controller
-Camera TBC
-Controller Selected: camera_controller
-END: _identify_device_controller
-1
-device_dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'selected_device': {}}
-<WSGIRequest: POST '/controller_selector/'>
-Request Method: POST
-Request POST: <QueryDict: {'csrfmiddlewaretoken': ['aNixiUHyH3M4tNrbP4BoBBzijbRygp1YNk2VFGyJhVVswyrhOmXBRVTjaV3dJFAo'], 'device_id': ['8']}>
-BEGIN: _identify_selected_device
-Device id: 8
-Device Selected: Devices object (8)
-Device Type: Light
-END: _identify_selected_device
-BEGIN: _identify_device_controller
-Light Controller
-Controller Selected: light_controller
-END: _identify_device_controller
-1
-device_dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'selected_device': {}}
-<WSGIRequest: POST '/controller_selector/'>
-Request Method: POST
-Request POST: <QueryDict: {'csrfmiddlewaretoken': ['8LvQG4ZdQ5tMuZgUoGHeCFlX0l9M1JovLife3QQoqXCaxKg0nY3rSZFYR5lruZXV'], 'device_id': ['8']}>
-BEGIN: _identify_selected_device
-Device id: 8
-Device Selected: Devices object (8)
-Device Type: Light
-END: _identify_selected_device
-BEGIN: _identify_device_controller
-Light Controller
-Controller Selected: light_controller
-END: _identify_device_controller
-1
-device_dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'selected_device': {}}
-<WSGIRequest: POST '/controller_selector/'>
-Request Method: POST
-Request POST: <QueryDict: {'csrfmiddlewaretoken': ['WOKQfSPn7Sg98P0En5ryvCYtyaHGf8BfzlueCEGyHKpxbA0KmnNLLWiupUTlIoaF'], 'device_id': ['4']}>
-BEGIN: _identify_selected_device
-Device id: 4
-Device Selected: Devices object (4)
 Device Type: Lock
-END: _identify_selected_device
-BEGIN: _identify_device_controller
-Lock TBC
-Controller Selected: lock_controller
-END: _identify_device_controller
-1
-device_dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'selected_device': {}}
-<WSGIRequest: GET '/controller_selector/'>
-Request Method: GET
-Request POST: <QueryDict: {}>
-1
-device_dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'selected_device': {}}
-<WSGIRequest: POST '/controller_selector/'>
-Request Method: POST
-Request POST: <QueryDict: {'csrfmiddlewaretoken': ['a27u8E3NdG0Z72XFTbWQkdel2e025Z6vNzRSvqUYNy9naNXLSti3AxymTYcHyfFV'], 'device_id': ['8']}>
-BEGIN: _identify_selected_device
-Device id: 8
-Device Selected: Devices object (8)
-Device Type: Light
-END: _identify_selected_device
-BEGIN: _identify_device_controller
-Light Controller
-Controller Selected: light_controller
-END: _identify_device_controller
-1
-device_dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'selected_device': {}}
-<WSGIRequest: POST '/controller_selector/'>
-Request Method: POST
-Request POST: <QueryDict: {'csrfmiddlewaretoken': ['QFvetL1pHjgdXCMrNKVMe4BmQlBbGY3rtcfCQxSAhbpB0nMxM2hZuoVnH5NQ9eCR'], 'device_id': ['4']}>
-BEGIN: _identify_selected_device
-Device id: 4
-Device Selected: Devices object (4)
-Device Type: Lock
-END: _identify_selected_device
-BEGIN: _identify_device_controller
-Lock TBC
-Controller Selected: lock_controller
-END: _identify_device_controller
-1
-device_dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'selected_device': {}}
-<WSGIRequest: GET '/controller_selector/'>
-Request Method: GET
-Request POST: <QueryDict: {}>
-1
-device_dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'selected_device': {}}
-<WSGIRequest: POST '/controller_selector/'>
-Request Method: POST
-Request POST: <QueryDict: {'csrfmiddlewaretoken': ['Dmh69twyIgxkZoeuIq82ru2dfTLQjUO7gT1uwfnJi8GI29eAHIufHOme6DXvManx'], 'device_id': ['8']}>
-BEGIN: _identify_selected_device
-Device id: 8
-Device Selected: Devices object (8)
-Device Type: Light
-END: _identify_selected_device
-BEGIN: _identify_device_controller
-Light Controller
-Controller Selected: light_controller
-END: _identify_device_controller
-1
-device_dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'selected_device': {}}
-<WSGIRequest: POST '/controller_selector/'>
-Request Method: POST
-Request POST: <QueryDict: {'csrfmiddlewaretoken': ['TbNxcwJ2CdjfJsPtZuMgAuqDlRtIc622wIxVziAdc5sDMdPzYM8tQOKEcBFnFmBs'], 'device_id': ['4']}>
-BEGIN: _identify_selected_device
-Device id: 4
-Device Selected: Devices object (4)
-Device Type: Lock
-END: _identify_selected_device
-BEGIN: _identify_device_controller
-Lock TBC
-Controller Selected: lock_controller
-END: _identify_device_controller
-1
-device_dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'selected_device': {}}
-<WSGIRequest: GET '/controller_selector/'>
-Request Method: GET
-Request POST: <QueryDict: {}>
-1
-device_dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'selected_device': {}}
-<WSGIRequest: POST '/controller_selector/'>
-Request Method: POST
-Request POST: <QueryDict: {'csrfmiddlewaretoken': ['N6qjXtbhlnPrnVkZgvt20e5EL1TdhdbRqDaHkf2sVfYPqGk5fNPfgypFCL5SKtKh'], 'device_id': ['8']}>
-BEGIN: _identify_selected_device
-Device id: 8
-Device Selected: Devices object (8)
-Device Type: Light
-END: _identify_selected_device
-BEGIN: _identify_device_controller
-Light Controller
-Controller Selected: light_controller
-END: _identify_device_controller
-1
-device_dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'selected_device': {}}
-<WSGIRequest: POST '/controller_selector/'>
-Request Method: POST
-Request POST: <QueryDict: {'csrfmiddlewaretoken': ['SdFlNMwTXtrxYoqNwQpfyft0jywBTE4zvKpJayn4xlAV19qTv8LsOzN1aiIgmUDZ'], 'device_id': ['4']}>
-BEGIN: _identify_selected_device
-Device id: 4
-Device Selected: Devices object (4)
-Device Type: Lock
-END: _identify_selected_device
-BEGIN: _identify_device_controller
-Lock TBC
-Controller Selected: lock_controller
-END: _identify_device_controller
-1
-device_dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'selected_device': {}}
-<WSGIRequest: POST '/controller_selector/'>
-Request Method: POST
-Request POST: <QueryDict: {'csrfmiddlewaretoken': ['4lNBhAkNJbMrlsa1kvtsXKg6yjUk82XuHSxZEmbYj3VPoda7jNPFd4A7p36ZBiwU'], 'device_id': ['8']}>
-BEGIN: _identify_selected_device
-Device id: 8
-Device Selected: Devices object (8)
-Device Type: Light
-END: _identify_selected_device
-BEGIN: _identify_device_controller
-Light Controller
-Controller Selected: light_controller
-END: _identify_device_controller
-1
-device_dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'selected_device': {}}
-<WSGIRequest: POST '/controller_selector/'>
-Request Method: POST
-Request POST: <QueryDict: {'csrfmiddlewaretoken': ['GrqOcKuAfVjeptd4PQWnVgGcCPexkGMBjYaczwlLPNsCsedaO8iAbA0dtzqcNWl1'], 'device_id': ['1']}>
-BEGIN: _identify_selected_device
-Device id: 1
-Device Selected: Devices object (1)
-Device Type: Camera
-END: _identify_selected_device
-BEGIN: _identify_device_controller
-Camera TBC
-Controller Selected: camera_controller
-END: _identify_device_controller
-1
-device_dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'selected_device': {}}
-<WSGIRequest: GET '/controller_selector/'>
-Request Method: GET
-Request POST: <QueryDict: {}>
-1
-device_dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'selected_device': {}}
-<WSGIRequest: POST '/controller_selector/'>
-Request Method: POST
-Request POST: <QueryDict: {'csrfmiddlewaretoken': ['UW8v3jz3oIj7xGT2aq7ECLqqZDWYT957xtSTq5qeYAsvArT89ItRS5KrQn8DmpEx'], 'device_id': ['8']}>
-BEGIN: _identify_selected_device
-Device id: 8
-Device Selected: Devices object (8)
-Device Type: Light
-END: _identify_selected_device
-BEGIN: _identify_device_controller
-Light Controller
-Controller Selected: light_controller
-END: _identify_device_controller
-Add to device dict: light_controller
-1
-device_dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'selected_device': {}}
-<WSGIRequest: GET '/controller_selector/'>
-Request Method: GET
-Request POST: <QueryDict: {}>
-1
-device_dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'selected_device': {}}
-<WSGIRequest: POST '/controller_selector/'>
-Request Method: POST
-Request POST: <QueryDict: {'csrfmiddlewaretoken': ['YyL4XYyFFxqJKyK8vlSBvWlg5US0Pt5rB5vskKpQfpz7NjKeuDeOLgFhWE4FiJER'], 'device_id': ['1']}>
-BEGIN: _identify_selected_device
-Device id: 1
-Device Selected: Devices object (1)
-Device Type: Camera
-END: _identify_selected_device
-BEGIN: _identify_device_controller
-Camera TBC
-Controller Selected: camera_controller
-END: _identify_device_controller
-Add to device dict: camera_controller
-1
-device_dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'selected_device': {}}
-<WSGIRequest: POST '/controller_selector/'>
-Request Method: POST
-Request POST: <QueryDict: {'csrfmiddlewaretoken': ['QwDusTLuF1yai4DHrI6mbCBuijPDrV9bt3nSPFCFfTHylPDNq0szrWVv931iUbIB'], 'device_id': ['4']}>
-BEGIN: _identify_selected_device
-Device id: 4
-Device Selected: Devices object (4)
-Device Type: Lock
-END: _identify_selected_device
-BEGIN: _identify_device_controller
-Lock TBC
-Controller Selected: lock_controller
-END: _identify_device_controller
-Add to device dict: lock_controller
-1
-device_dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'selected_device': {}}
-<WSGIRequest: POST '/controller_selector/'>
-Request Method: POST
-Request POST: <QueryDict: {'csrfmiddlewaretoken': ['dcLcZlqiaRK0FVzHikeQuskIuKuezEDHQJvAm7htKJToIGzNhCA3KMEJluGT2Uc7'], 'device_id': ['8']}>
-BEGIN: _identify_selected_device
-Device id: 8
-Device Selected: Devices object (8)
-Device Type: Light
-END: _identify_selected_device
-BEGIN: _identify_device_controller
-Light Controller
-Controller Selected: light_controller
-END: _identify_device_controller
-Add to device dict: light_controller
-1
-device_dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'selected_device': {}}
-<WSGIRequest: GET '/controller_selector/'>
-Request Method: GET
-Request POST: <QueryDict: {}>
-1
-device_dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'selected_device': {}}
-<WSGIRequest: POST '/controller_selector/'>
-Request Method: POST
-Request POST: <QueryDict: {'csrfmiddlewaretoken': ['gALEnwu5QJzUIqabf08oNLlrgkaePhFsT7v2KilgqBIiLbaheiuB35Fs74mTixeS'], 'device_id': ['8']}>
-BEGIN: _identify_selected_device
-Device id: 8
-Device Selected: Devices object (8)
-Device Type: Light
-END: _identify_selected_device
-BEGIN: _identify_device_controller
-Light Controller
-Controller Selected: light_controller
-END: _identify_device_controller
-Add to device dict: light_controller
-1
-device_dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'selected_device': {}}
-<WSGIRequest: POST '/controller_selector/'>
-Request Method: POST
-Request POST: <QueryDict: {'csrfmiddlewaretoken': ['MBhbasJou9adqKnpeKvHRmnmDBBQfYoEp81zxeAz41jBtvnvd2RU7GHnulNvIeX4'], 'device_id': ['4']}>
-BEGIN: _identify_selected_device
-Device id: 4
-Device Selected: Devices object (4)
-Device Type: Lock
-END: _identify_selected_device
-BEGIN: _identify_device_controller
-Lock TBC
-Controller Selected: lock_controller
-END: _identify_device_controller
-Add to device dict: lock_controller
-1
-device_dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'selected_device': {}}
-<WSGIRequest: POST '/controller_selector/'>
-Request Method: POST
-Request POST: <QueryDict: {'csrfmiddlewaretoken': ['ong8fMzhMz2VRtnQWKLW4E1XPXhV38de1U0wCyqsmrbjUenWV279kYlYGHtAwoME'], 'device_id': ['1']}>
-BEGIN: _identify_selected_device
-Device id: 1
-Device Selected: Devices object (1)
-Device Type: Camera
-END: _identify_selected_device
-BEGIN: _identify_device_controller
-Camera TBC
-Controller Selected: camera_controller
-END: _identify_device_controller
-Add to device dict: camera_controller
-1
-device_dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'selected_device': {}}
-<WSGIRequest: GET '/controller_selector/'>
-Request Method: GET
-Request POST: <QueryDict: {}>
-1
-device_dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'selected_device': {}}
-<WSGIRequest: POST '/controller_selector/'>
-Request Method: POST
-Request POST: <QueryDict: {'csrfmiddlewaretoken': ['10FXrLkjMJ8f83jR136SUozfFnzmbNRDExplOxbumBhDbOjX0ls5aITgw7L1E3q3'], 'device_id': ['8']}>
-BEGIN: _identify_selected_device
-Device id: 8
-Device Selected: Devices object (8)
-Device Type: Light
-END: _identify_selected_device
-BEGIN: _identify_device_controller
-Light Controller
-Controller Selected: light_controller
-END: _identify_device_controller
-Add to device dict: light_controller
-1
-device_dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'selected_device': {}}
-<WSGIRequest: GET '/controller_selector/'>
-Request Method: GET
-Request POST: <QueryDict: {}>
-1
-device_dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'selected_device': {}}
-<WSGIRequest: POST '/controller_selector/'>
-Request Method: POST
-Request POST: <QueryDict: {'csrfmiddlewaretoken': ['9j9MWVo1qCtdgmOT8NzBHncrcMibxOYQMQTajHfc0uCBj7OZ75VOXHws3wuQ04xg'], 'device_id': ['1']}>
-BEGIN: _identify_selected_device
-Device id: 1
-Device Selected: Devices object (1)
-Device Type: Camera
-END: _identify_selected_device
-BEGIN: _identify_device_controller
-Camera TBC
-Controller Selected: camera_controller
-END: _identify_device_controller
-Add to device dict: camera_controller
-1
-device_dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'selected_device': {}}
-<WSGIRequest: POST '/controller_selector/'>
-Request Method: POST
-Request POST: <QueryDict: {'csrfmiddlewaretoken': ['wyWiQDuRbD2oSXYayFN2TXdaCv9wZlpx95GGdpl2LvbMVIYgxX9f9hxbtflbsBYX'], 'device_id': ['4']}>
-BEGIN: _identify_selected_device
-Device id: 4
-Device Selected: Devices object (4)
-Device Type: Lock
-END: _identify_selected_device
-BEGIN: _identify_device_controller
-Lock TBC
-Controller Selected: lock_controller
-END: _identify_device_controller
-Add to device dict: lock_controller
-1
-device_dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'selected_device': {}}
-<WSGIRequest: POST '/controller_selector/'>
-Request Method: POST
-Request POST: <QueryDict: {'csrfmiddlewaretoken': ['mCmJZw38g2w5gO3Z4LJfYf69VZW2Q7t5Z967miUjQUFtjz35335sezqaMJ8Hjn2v'], 'device_id': ['8']}>
-BEGIN: _identify_selected_device
-Device id: 8
-Device Selected: Devices object (8)
-Device Type: Light
-END: _identify_selected_device
-BEGIN: _identify_device_controller
-Light Controller
-Controller Selected: light_controller
-END: _identify_device_controller
-Add to device dict: light_controller
-1
-device_dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'selected_device': {}}
-<WSGIRequest: GET '/controller_selector/'>
-Request Method: GET
-Request POST: <QueryDict: {}>
-1
-device_dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'selected_device': {}}
-<WSGIRequest: POST '/controller_selector/'>
-Request Method: POST
-Request POST: <QueryDict: {'csrfmiddlewaretoken': ['31q4aoOBBZeIcvUltCw8Ggy1vZJzkrXJGyasxaFMbRn6fgUrsUSlWAS2mJVeNHw9'], 'device_id': ['8']}>
-BEGIN: _identify_selected_device
-Device id: 8
-Device Selected: Devices object (8)
-Device Type: Light
-END: _identify_selected_device
-BEGIN: _identify_device_controller
-Light Controller
-Controller Selected: light_controller
-END: _identify_device_controller
-Add to device dict: light_controller
-1
-device_dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'selected_device': {}}
-<WSGIRequest: POST '/controller_selector/'>
-Request Method: POST
-Request POST: <QueryDict: {'csrfmiddlewaretoken': ['6Fpbins4VnIKRHsXMwKstqBz0pCVbLg8Jc9zF9jfvfR8Uss3LO6FJKVAR9OAE1Py'], 'device_id': ['8']}>
-BEGIN: _identify_selected_device
-Device id: 8
-Device Selected: Devices object (8)
-Device Type: Light
-END: _identify_selected_device
-BEGIN: _identify_device_controller
-Light Controller
-Controller Selected: light_controller
-END: _identify_device_controller
-Add to device dict: light_controller
-1
-device_dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'selected_device': {}}
-<WSGIRequest: GET '/controller_selector/'>
-Request Method: GET
-Request POST: <QueryDict: {}>
-1
-device_dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'selected_device': {}}
-<WSGIRequest: POST '/controller_selector/'>
-Request Method: POST
-Request POST: <QueryDict: {'csrfmiddlewaretoken': ['HNT3PjO5OGuFKu3HXzPn4IhAC6UYiehUkkDrc5FgoyD3Nf3NWRbAk2BBtQ6DLuQk'], 'device_id': ['8']}>
-BEGIN: _identify_selected_device
-Device id: 8
-Device Selected: Devices object (8)
-Device Type: Light
 END: _identify_selected_device
 2
-Device Name: grape
-Device Type: Light
+Device Name: Fish
+Device Type: Lock
 BEGIN: _identify_device_controller
-Light Controller
-Controller Selected: light_controller
+Lock TBC
+Controller Selected: lock_controller
 END: _identify_device_controller
-Add to device dict: light_controller
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'lock_controller', 'selected_device': {'device_name': 'Fish', 'device_type': 'Lock'}}
 1
-device_dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'controller': {}, 'selected_device': {'device_name': '', 'device_type': ''}}
-<WSGIRequest: GET '/controller_selector/'>
-Request Method: GET
-Request POST: <QueryDict: {}>
-1
-device_dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'controller': {}, 'selected_device': {'device_name': '', 'device_type': ''}}
+device_dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': {}, 'selected_device': {'device_name': '', 'device_type': ''}}
 <WSGIRequest: POST '/controller_selector/'>
 Request Method: POST
-Request POST: <QueryDict: {'csrfmiddlewaretoken': ['8mwWeuydCXUMBryTiMbDmEiV06Z9RiJNLTgkBgpocP3aEcyZh4xQCYCWRQbOkyid'], 'device_id': ['1']}>
-BEGIN: _identify_selected_device
-Device id: 1
-Device Selected: Devices object (1)
-Device Type: Camera
-END: _identify_selected_device
-2
-Device Name: Bob
-Device Type: Camera
-BEGIN: _identify_device_controller
-Camera TBC
-Controller Selected: camera_controller
-END: _identify_device_controller
-1
-device_dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'controller': {}, 'selected_device': {'device_name': '', 'device_type': ''}}
-<WSGIRequest: GET '/controller_selector/'>
-Request Method: GET
-Request POST: <QueryDict: {}>
-1
-device_dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'controller': {}, 'selected_device': {'device_name': '', 'device_type': ''}}
-<WSGIRequest: POST '/controller_selector/'>
-Request Method: POST
-Request POST: <QueryDict: {'csrfmiddlewaretoken': ['MBaYJOzcC4TA7heY49tIhtHbkJbWTTzhp8Um6AqncW2Ya2e43rPVxN1cbtnBm98H'], 'device_id': ['1']}>
-BEGIN: _identify_selected_device
-Device id: 1
-Device Selected: Devices object (1)
-Device Type: Camera
-END: _identify_selected_device
-2
-Device Name: Bob
-Device Type: Camera
-BEGIN: _identify_device_controller
-Camera TBC
-Controller Selected: camera_controller
-END: _identify_device_controller
-Add to device dict: camera_controller
-1
-device_dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'controller': {}, 'selected_device': {'device_name': '', 'device_type': ''}}
-<WSGIRequest: GET '/controller_selector/'>
-Request Method: GET
-Request POST: <QueryDict: {}>
-1
-device_dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'controller': {}, 'selected_device': {'device_name': '', 'device_type': ''}}
-<WSGIRequest: POST '/controller_selector/'>
-Request Method: POST
-Request POST: <QueryDict: {'csrfmiddlewaretoken': ['ipIkkxZtC6qb0wl2lSSsHfCKDJRveus1VWsIHjQEcYzz3hl8kaeFXzWLut3aHK1r'], 'device_id': ['4']}>
+Request POST: <QueryDict: {'csrfmiddlewaretoken': ['kNdzKpdua5AwtKmukYFkf7SurnF5QXQ7XkXX7b4FKXJUwvmAjg1xvrcvi7RKjdpx'], 'device_id': ['4']}>
 BEGIN: _identify_selected_device
 Device id: 4
 Device Selected: Devices object (4)
@@ -526,270 +52,785 @@ BEGIN: _identify_device_controller
 Lock TBC
 Controller Selected: lock_controller
 END: _identify_device_controller
-device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'controller': 'lock_controller', 'selected_device': {'device_name': 'Mark', 'device_type': 'Lock'}}
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'lock_controller', 'selected_device': {'device_name': 'Mark', 'device_type': 'Lock'}}
 1
-device_dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'controller': {}, 'selected_device': {'device_name': '', 'device_type': ''}}
+device_dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': {}, 'selected_device': {'device_name': '', 'device_type': ''}}
+<WSGIRequest: POST '/controller_selector/'>
+Request Method: POST
+Request POST: <QueryDict: {'csrfmiddlewaretoken': ['ffpIzriu8jFOJzPHIs1xX8ut07cSA36ESM96Wd9FIbOcMkPNHKnKdsOuRRox3jF4'], 'device_id': ['9']}>
+BEGIN: _identify_selected_device
+Device id: 9
+Device Selected: Devices object (9)
+Device Type: Light
+END: _identify_selected_device
+2
+Device Name: John
+Device Type: Light
+BEGIN: _identify_device_controller
+Light Controller
+Controller Selected: light_controller
+END: _identify_device_controller
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'light_controller', 'selected_device': {'device_name': 'John', 'device_type': 'Light'}}
+1
+device_dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': {}, 'selected_device': {'device_name': '', 'device_type': ''}}
 <WSGIRequest: GET '/controller_selector/'>
 Request Method: GET
 Request POST: <QueryDict: {}>
-1
-device_dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'controller': {}, 'selected_device': {'device_name': '', 'device_type': ''}}
-<WSGIRequest: POST '/controller_selector/'>
-Request Method: POST
-Request POST: <QueryDict: {'csrfmiddlewaretoken': ['8dnzkzudXhgOXLkMLDGZEAu2ptc5jQa9LK7XHllox9pc0wkSKV2cUUO3gdoKM6Jz'], 'device_id': ['1']}>
+<QueryDict: {'csrfmiddlewaretoken': ['kcdEuSGxGhZ01fM16kNZ0GY4Kdr1FQcfXJX2RExIg98o40M75C9cg0i5BXDG86LF'], 'device_id': ['9']}>
+<QueryDict: {'csrfmiddlewaretoken': ['NVpA4AQLHKnuJQ6aOj6wiEuMb9ytKjHFqs9YrmHWhCwSMB6gNBsJyYON2TK8dzg5'], 'device_id': ['1']}>
+<QueryDict: {'csrfmiddlewaretoken': ['tYMElJMIeHIcLaWNHEv8kKAihGPz0gAR6vw2IvDTOzRAOVWTGWRlA4Uj8q1etw9h'], 'device_id': ['1']}>
+<QueryDict: {'csrfmiddlewaretoken': ['xK2d94ftciVYVROZsDte9wh5DqCtyqYBahMBwQ6EMa4mYCO5rVPrpQB6uaO81Gx1'], 'device_id': ['1']}>
 BEGIN: _identify_selected_device
 Device id: 1
 Device Selected: Devices object (1)
-Device Type: Camera
+Device Type: Lock
 END: _identify_selected_device
-2
-Device Name: Bob
-Device Type: Camera
 BEGIN: _identify_device_controller
-Camera TBC
-Controller Selected: camera_controller
+Lock TBC
+Controller Selected: lock_controller
 END: _identify_device_controller
-device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'controller': 'camera_controller', 'selected_device': {'device_name': 'Bob', 'device_type': 'Camera'}}
-1
-device_dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'controller': {}, 'selected_device': {'device_name': '', 'device_type': ''}}
-<WSGIRequest: POST '/controller_selector/'>
-Request Method: POST
-Request POST: <QueryDict: {'csrfmiddlewaretoken': ['22nn8sAo1GpjNuAqAG4xfqzE5MY0o65tFz7LverzByyHQfAwzYqKvKTFWwaFRmET'], 'device_id': ['4']}>
+<QueryDict: {'csrfmiddlewaretoken': ['3NGWQsilEYIielIDJN7WtOc8W6ESIUKLGkqkde9weQRGh6IJI5t9J8w9NQQxbajb'], 'device_id': ['1']}>
+BEGIN: _identify_selected_device
+Device id: 1
+Device Selected: Devices object (1)
+Device Type: Lock
+END: _identify_selected_device
+BEGIN: _identify_device_controller
+Lock TBC
+Controller Selected: lock_controller
+END: _identify_device_controller
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'lock_controller', 'selected_device': {'device_name': 'Fish', 'device_type': 'Lock', 'device_state': ''}}
+<QueryDict: {'csrfmiddlewaretoken': ['JQGdH3ZFmMJxNfQ1nygeVERWIPzjkx1umnqB4PQQWESVQ0Q7mQCrbYbXzzLYNNAU'], 'device_id': ['1']}>
+BEGIN: _identify_selected_device
+Device id: 1
+Device Selected: Devices object (1)
+Device Type: Lock
+END: _identify_selected_device
+BEGIN: _identify_device_controller
+Lock TBC
+Controller Selected: lock_controller
+END: _identify_device_controller
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'lock_controller', 'selected_device': {'device_name': 'Fish', 'device_type': 'Lock', 'device_state': ''}}
+<QueryDict: {'csrfmiddlewaretoken': ['1EdI17O4bxZPDu67iyiD0KyhjFhIjqb3EbX6oTFfLp8dGf6dhQEQg4SiaptnMGKt'], 'device_state': ['lock']}>
+<QueryDict: {'csrfmiddlewaretoken': ['p4kp0rlUGr27iYbEqCWkeHUek5cQUwUK2B4Nndc5gjbvlJbKpUixu1efbPovnMta'], 'device_id': ['1']}>
+BEGIN: _identify_selected_device
+Device id: 1
+Device Selected: Devices object (1)
+Device Type: Lock
+END: _identify_selected_device
+BEGIN: _identify_device_controller
+Lock TBC
+Controller Selected: lock_controller
+END: _identify_device_controller
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'lock_controller', 'selected_device': {'device_name': 'Fish', 'device_type': 'Lock', 'device_state': ''}}
+<QueryDict: {'csrfmiddlewaretoken': ['zxk2Pl6Irq9A5eAEIFytgy1zl1u9auy4c44qc7XT1iiY8ZAKHXUGwSlAcLGODK7u'], 'device_id': ['1']}>
+BEGIN: _identify_selected_device
+Device id: 1
+Device Selected: Devices object (1)
+Device Type: Lock
+END: _identify_selected_device
+BEGIN: _identify_device_controller
+Lock TBC
+Controller Selected: lock_controller
+END: _identify_device_controller
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'lock_controller', 'selected_device': {'device_name': 'Fish', 'device_type': 'Lock', 'device_state': ''}}
+<QueryDict: {'csrfmiddlewaretoken': ['HW8Svmrwr8ui4m4PlRMPsy3L4bNGq0WiktSgS8iH10DG774Vk982ISnMVVZlTgvI'], 'device_id': ['1']}>
+BEGIN: _identify_selected_device
+Device id: 1
+Device Selected: Devices object (1)
+Device Type: Lock
+END: _identify_selected_device
+BEGIN: _identify_device_controller
+Lock TBC
+Controller Selected: lock_controller
+END: _identify_device_controller
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'lock_controller', 'selected_device': {'device_name': 'Fish', 'device_type': 'Lock', 'device_state': ''}}
+<QueryDict: {'csrfmiddlewaretoken': ['lN5yrwOyuTY4g4zlSqNclkdmHQezk6EnYkPWOiFJ4L7sjPzrRI9pBExnyAqeNmdN'], 'device_state': ['lock']}>
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': {}, 'selected_device': {'device_name': '', 'device_type': '', 'device_state': 'lock'}}
+<QueryDict: {'csrfmiddlewaretoken': ['P3MTsUjiDhBD08sznROPIQGLr9OBzS58sAwhPGatd9K13TsFm9a2Ya0MiT0g28Ey'], 'device_id': ['1']}>
+BEGIN: _identify_selected_device
+Device id: 1
+Device Selected: Devices object (1)
+Device Type: Lock
+END: _identify_selected_device
+BEGIN: _identify_device_controller
+Lock TBC
+Controller Selected: lock_controller
+END: _identify_device_controller
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'lock_controller', 'selected_device': {'device_name': 'Fish', 'device_type': 'Lock', 'device_state': ''}}
+<QueryDict: {'csrfmiddlewaretoken': ['wRqqVmOPe9auurOeoHupGXvNPWMO4LsS9oaOi8F0O1jSxcOknZQCWhPOGGYtx11i'], 'device_state': ['lock']}>
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': {}, 'selected_device': {'device_name': '', 'device_type': '', 'device_state': 'lock'}}
+<QueryDict: {'csrfmiddlewaretoken': ['AHWw4ygLDMiibt2GX9TumMnezgtvskL0deGUrk7WdErGee2MWrfHC6Hfq0FaVAkq'], 'device_id': ['1']}>
+BEGIN: _identify_selected_device
+Device id: 1
+Device Selected: Devices object (1)
+Device Type: Lock
+END: _identify_selected_device
+BEGIN: _identify_device_controller
+Lock TBC
+Controller Selected: lock_controller
+END: _identify_device_controller
+<QueryDict: {'csrfmiddlewaretoken': ['kzbzbd9pk6jCY0m63REj7x0ZeUppBj62X6VXyZ0AUYs01Lmc290wnRk05EB44zFs'], 'device_id': ['1']}>
+BEGIN: _identify_selected_device
+Device id: 1
+Device Selected: Devices object (1)
+Device Type: Lock
+END: _identify_selected_device
+BEGIN: _identify_device_controller
+Lock TBC
+Controller Selected: lock_controller
+END: _identify_device_controller
+<QueryDict: {'csrfmiddlewaretoken': ['lJlgB4nHKnrNT4nFvOx9Iah6GcleSVbDYg5EYQeSkfAbWPnLu6TmYuB7xWxTlbK3'], 'device_id': ['1']}>
+BEGIN: _identify_selected_device
+Device id: 1
+Device Selected: Devices object (1)
+Device Type: Lock
+END: _identify_selected_device
+BEGIN: _identify_device_controller
+Lock TBC
+Controller Selected: lock_controller
+END: _identify_device_controller
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'lock_controller', 'selected_device': {'device_name': 'Fish', 'device_type': 'Lock', 'device_state': ''}}
+<QueryDict: {'csrfmiddlewaretoken': ['kq6Ek0QKsKkc5w42ElIsx6q6fdP6k1bnXXQ2HMHV2CtA8h48DD4FNqK76X1LNhKN'], 'device_state': ['lock']}>
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': {}, 'selected_device': {'device_name': '', 'device_type': '', 'device_state': ''}}
+<QueryDict: {'csrfmiddlewaretoken': ['uy1WZZ09WLWVXrFrYR6v0e54IV2mjeCJ75LkmLRkwD5j0cFxX9sIgyp5zFe1Mub9'], 'device_id': ['1']}>
+BEGIN: _identify_selected_device
+Device id: 1
+Device Selected: Devices object (1)
+Device Type: Lock
+END: _identify_selected_device
+BEGIN: _identify_device_controller
+Lock TBC
+Controller Selected: lock_controller
+END: _identify_device_controller
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'lock_controller', 'selected_device': {'device_name': 'Fish', 'device_type': 'Lock', 'device_state': ''}}
+<QueryDict: {'csrfmiddlewaretoken': ['RISd2XjiwrDzThxmQi2F6rsJB8nwozufufCBpJat6jMXW2xsPAoSmLMKsSzbRP3F'], 'device_id': ['1']}>
+BEGIN: _identify_selected_device
+Device id: 1
+Device Selected: Devices object (1)
+Device Type: Lock
+END: _identify_selected_device
+BEGIN: _identify_device_controller
+Lock TBC
+Controller Selected: lock_controller
+END: _identify_device_controller
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'lock_controller', 'selected_device': {'device_name': 'Fish', 'device_type': 'Lock', 'device_state': ''}}
+<QueryDict: {'csrfmiddlewaretoken': ['574tXcg0VLwkWGZ2lMBuAuSyjFKo7xFXIEORkY7bvDFIZrZ8k4XHQOczapW3ANen'], 'device_state': ['unlock']}>
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': {}, 'selected_device': {'device_name': '', 'device_type': '', 'device_state': ''}}
+<QueryDict: {'csrfmiddlewaretoken': ['Q0tFVFJ0UFfHh48hdTy02ynO557vcwICtxd3irAbuxo5kP8ncbUdiSHPWPjaFMh2'], 'device_id': ['1']}>
+BEGIN: _identify_selected_device
+Device id: 1
+Device Selected: Devices object (1)
+Device Type: Lock
+END: _identify_selected_device
+BEGIN: _identify_device_controller
+Lock TBC
+Controller Selected: lock_controller
+END: _identify_device_controller
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'lock_controller', 'selected_device': {'device_name': 'Fish', 'device_type': 'Lock', 'device_state': ''}}
+<QueryDict: {'csrfmiddlewaretoken': ['0Ek0rf6SRI18LtfIKtfkytge6mxZExwqDb4oO1X3rAawOefOJLBxONAfX6JE7N5Q'], 'device_state': ['lock']}>
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': {}, 'selected_device': {'device_name': '', 'device_type': '', 'device_state': ''}}
+<QueryDict: {'csrfmiddlewaretoken': ['g4swOwsfCv6JO6QMlmilF0UKvBa5bSezTBcUbijqcnf7RRQSkEEyVkeLmlmKE8NZ'], 'device_id': ['4']}>
 BEGIN: _identify_selected_device
 Device id: 4
 Device Selected: Devices object (4)
 Device Type: Lock
 END: _identify_selected_device
-2
-Device Name: Mark
-Device Type: Lock
 BEGIN: _identify_device_controller
 Lock TBC
 Controller Selected: lock_controller
 END: _identify_device_controller
-device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'controller': 'lock_controller', 'selected_device': {'device_name': 'Mark', 'device_type': 'Lock'}}
-1
-device_dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'controller': {}, 'selected_device': {'device_name': '', 'device_type': ''}}
-<WSGIRequest: POST '/controller_selector/'>
-Request Method: POST
-Request POST: <QueryDict: {'csrfmiddlewaretoken': ['UxbvMbhyPyXhxNyI5oObhfuic15lIZmox4VT9X8Jpq6FAyyO4GaoxzOj3Lh0bfVO'], 'device_id': ['8']}>
-BEGIN: _identify_selected_device
-Device id: 8
-Device Selected: Devices object (8)
-Device Type: Light
-END: _identify_selected_device
-2
-Device Name: grape
-Device Type: Light
-BEGIN: _identify_device_controller
-Light Controller
-Controller Selected: light_controller
-END: _identify_device_controller
-device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'controller': 'light_controller', 'selected_device': {'device_name': 'grape', 'device_type': 'Light'}}
-1
-device_dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'controller': {}, 'selected_device': {'device_name': '', 'device_type': ''}}
-<WSGIRequest: GET '/controller_selector/'>
-Request Method: GET
-Request POST: <QueryDict: {}>
-1
-device_dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'controller': {}, 'selected_device': {'device_name': '', 'device_type': ''}}
-<WSGIRequest: GET '/controller_selector/'>
-Request Method: GET
-Request POST: <QueryDict: {}>
-1
-device_dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'controller': {}, 'selected_device': {'device_name': '', 'device_type': ''}}
-<WSGIRequest: POST '/controller_selector/'>
-Request Method: POST
-Request POST: <QueryDict: {'csrfmiddlewaretoken': ['em4Vi8bnHBieWKGAiQc1nxTCzmL00lrxRTOjFU2yhtrCZvGGh8yeDRdDq6XFtB0X'], 'device_id': ['1']}>
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'lock_controller', 'selected_device': {'device_name': 'Mark', 'device_type': 'Lock', 'device_state': ''}}
+<QueryDict: {'csrfmiddlewaretoken': ['32J1uMTAF9RgwJyDEmut7WmLfFmEUOxOGztpRyKLf10EzuyJDEQGngGM6pyjn46e'], 'device_state': ['lock']}>
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': {}, 'selected_device': {'device_name': '', 'device_type': '', 'device_state': ''}}
+<QueryDict: {'csrfmiddlewaretoken': ['ImfUoZcz5mYoqrg9ZzSomMuNyomfa9uClTZiLL3KFe7MtcgfYReBC6OOp8yUDp32'], 'device_id': ['1']}>
 BEGIN: _identify_selected_device
 Device id: 1
 Device Selected: Devices object (1)
-Device Type: Camera
+Device Type: Lock
 END: _identify_selected_device
-2
-Device Name: Bob
-Device Type: Camera
 BEGIN: _identify_device_controller
-Camera TBC
-Controller Selected: camera_controller
+Lock TBC
+Controller Selected: lock_controller
 END: _identify_device_controller
-device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'controller': 'camera_controller', 'selected_device': {'device_name': 'Bob', 'device_type': 'Camera'}}
 1
-device_dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'controller': {}, 'selected_device': {'device_name': '', 'device_type': ''}}
-<WSGIRequest: POST '/controller_selector/'>
-Request Method: POST
-Request POST: <QueryDict: {'csrfmiddlewaretoken': ['TKeG0ZLmH3QAHs9aE00UgJwKoHYEQXIEwhY4nLCxhVZYKd9gDim7w3QLfrajjdh4'], 'device_id': ['4']}>
+2
+3
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'lock_controller', 'selected_device': {'device_name': 'Fish', 'device_type': 'Lock', 'device_state': ''}}
+<QueryDict: {'csrfmiddlewaretoken': ['NAyQfHCS6wlyPHw4QkuECd57NVDc0Ieuq7ieCtt3GouWSswaPCQRSxp8EFPRtYNU'], 'device_state': ['lock']}>
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': {}, 'selected_device': {'device_name': '', 'device_type': '', 'device_state': ''}}
+<QueryDict: {'csrfmiddlewaretoken': ['ADrVR8HzjlovbZrXRgYhYMeW1oXoeJL7dabjeUyKTdxTeKr3Qykue6yXS893HZkx'], 'device_id': ['1']}>
+BEGIN: _identify_selected_device
+Device id: 1
+Device Selected: Devices object (1)
+Device Type: Lock
+END: _identify_selected_device
+BEGIN: _identify_device_controller
+Lock TBC
+Controller Selected: lock_controller
+END: _identify_device_controller
+1
+2
+3
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'lock_controller', 'selected_device': {'device_name': 'Fish', 'device_type': 'Lock', 'device_state': ''}}
+<QueryDict: {'csrfmiddlewaretoken': ['7TRRCVOLaTAyDDqaJOW2lnMr9wAOTz6MKqBfZHFWKLJWGoqgI6ifBH6s0gMtmPFc'], 'device_id': ['1']}>
+BEGIN: _identify_selected_device
+Device id: 1
+Device Selected: Devices object (1)
+Device Type: Lock
+END: _identify_selected_device
+BEGIN: _identify_device_controller
+Lock TBC
+Controller Selected: lock_controller
+END: _identify_device_controller
+1
+2
+3
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'lock_controller', 'selected_device': {'device_name': 'Fish', 'device_type': 'Lock', 'device_state': ''}}
+<QueryDict: {'csrfmiddlewaretoken': ['9TnhUtAd1f6C2Ywoi0DtOf245bOluxo3Mq7FhfroB7f05JwuhiZG4zm5WV00XNXt'], 'device_state': ['lock']}>
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': {}, 'selected_device': {'device_name': '', 'device_type': '', 'device_state': ''}}
+<QueryDict: {'csrfmiddlewaretoken': ['j9cSUN32a3BGrASkoMuMteDjHBBgrUm8WGWghzUdKVK4ulSqn4QZJyXkylNVUaVy'], 'device_id': ['4']}>
 BEGIN: _identify_selected_device
 Device id: 4
 Device Selected: Devices object (4)
 Device Type: Lock
 END: _identify_selected_device
-2
-Device Name: Mark
-Device Type: Lock
 BEGIN: _identify_device_controller
 Lock TBC
 Controller Selected: lock_controller
 END: _identify_device_controller
-device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'controller': 'lock_controller', 'selected_device': {'device_name': 'Mark', 'device_type': 'Lock'}}
 1
-device_dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'controller': {}, 'selected_device': {'device_name': '', 'device_type': ''}}
-<WSGIRequest: POST '/controller_selector/'>
-Request Method: POST
-Request POST: <QueryDict: {'csrfmiddlewaretoken': ['v8bwF7gHjRQcV6cfumDvmDufHub6Y5iT8FVU2T7STJZAYRcltEZICXOgyenLrlRj'], 'device_id': ['8']}>
-BEGIN: _identify_selected_device
-Device id: 8
-Device Selected: Devices object (8)
-Device Type: Light
-END: _identify_selected_device
 2
-Device Name: grape
-Device Type: Light
-BEGIN: _identify_device_controller
-Light Controller
-Controller Selected: light_controller
-END: _identify_device_controller
-device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'controller': 'light_controller', 'selected_device': {'device_name': 'grape', 'device_type': 'Light'}}
-1
-device_dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'controller': {}, 'selected_device': {'device_name': '', 'device_type': ''}}
-<WSGIRequest: POST '/controller_selector/'>
-Request Method: POST
-Request POST: <QueryDict: {'csrfmiddlewaretoken': ['wsiXS14fZFlIrrO7TB7P3tEvkr1Whx7D9Z2lfNVqzxu6ucOdSTt2jNYwbbdBKNG3'], 'device_id': ['1']}>
-BEGIN: _identify_selected_device
-Device id: 1
-Device Selected: Devices object (1)
-Device Type: Camera
-END: _identify_selected_device
-2
-Device Name: Bob
-Device Type: Camera
-BEGIN: _identify_device_controller
-Camera TBC
-Controller Selected: camera_controller
-END: _identify_device_controller
-device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'controller': 'camera_controller', 'selected_device': {'device_name': 'Bob', 'device_type': 'Camera'}}
-1
-device_dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'controller': {}, 'selected_device': {'device_name': '', 'device_type': ''}}
-<WSGIRequest: GET '/controller_selector/'>
-Request Method: GET
-Request POST: <QueryDict: {}>
-1
-device_dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'controller': {}, 'selected_device': {'device_name': '', 'device_type': ''}}
-<WSGIRequest: GET '/controller_selector/'>
-Request Method: GET
-Request POST: <QueryDict: {}>
-1
-device_dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'controller': {}, 'selected_device': {'device_name': '', 'device_type': ''}}
-<WSGIRequest: POST '/controller_selector/'>
-Request Method: POST
-Request POST: <QueryDict: {'csrfmiddlewaretoken': ['L8Kbjgu56NDsVv6XkCO0rEiEFfH1Vk5zoFuzG2lgGFMQYg63jUadHYCFwZTGoAEZ'], 'device_id': ['1']}>
-BEGIN: _identify_selected_device
-Device id: 1
-Device Selected: Devices object (1)
-Device Type: Camera
-END: _identify_selected_device
-2
-Device Name: Bob
-Device Type: Camera
-BEGIN: _identify_device_controller
-Camera TBC
-Controller Selected: camera_controller
-END: _identify_device_controller
-device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'controller': 'camera_controller', 'selected_device': {'device_name': 'Bob', 'device_type': 'Camera'}}
-1
-device_dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'controller': {}, 'selected_device': {'device_name': '', 'device_type': ''}}
-<WSGIRequest: POST '/controller_selector/'>
-Request Method: POST
-Request POST: <QueryDict: {'csrfmiddlewaretoken': ['HvYMJnxzMnNUboxRlB1O5PN62DaGLDMsk2Ia69oKmfWie9xXkTn1l977TnmleTlS'], 'device_id': ['4']}>
+3
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'lock_controller', 'selected_device': {'device_name': 'Mark', 'device_type': 'Lock', 'device_state': ''}}
+<QueryDict: {'csrfmiddlewaretoken': ['Rk2kNj84ZBHNB7D4IFdSIA38PGmGnuLruRMIa5ZfztQbESDaHXz5YUn9GqylQKkR'], 'device_id': ['4']}>
 BEGIN: _identify_selected_device
 Device id: 4
 Device Selected: Devices object (4)
 Device Type: Lock
 END: _identify_selected_device
-2
-Device Name: Mark
-Device Type: Lock
 BEGIN: _identify_device_controller
 Lock TBC
 Controller Selected: lock_controller
 END: _identify_device_controller
-device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'controller': 'lock_controller', 'selected_device': {'device_name': 'Mark', 'device_type': 'Lock'}}
 1
-device_dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'controller': {}, 'selected_device': {'device_name': '', 'device_type': ''}}
-<WSGIRequest: POST '/controller_selector/'>
-Request Method: POST
-Request POST: <QueryDict: {'csrfmiddlewaretoken': ['ZJgpGLkwFU3vjqza5bsq33RCDzZXzLL2Cg0N3xbHfMcTmbzg4tODjnbDujbC21ks'], 'device_id': ['8']}>
+2
+3
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'lock_controller', 'selected_device': {'device_name': 'Mark', 'device_type': 'Lock', 'device_state': ''}}
+<QueryDict: {'csrfmiddlewaretoken': ['RsBJVIQ3oYoUfuSMJFBl7EkK7g6ZV4IuuZl7iuHeYQxiifSSIXXynYELY0iEokhU'], 'device_id': ['9']}>
 BEGIN: _identify_selected_device
-Device id: 8
-Device Selected: Devices object (8)
+Device id: 9
+Device Selected: Devices object (9)
 Device Type: Light
 END: _identify_selected_device
-2
-Device Name: grape
-Device Type: Light
 BEGIN: _identify_device_controller
 Light Controller
 Controller Selected: light_controller
 END: _identify_device_controller
-device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'controller': 'light_controller', 'selected_device': {'device_name': 'grape', 'device_type': 'Light'}}
 1
-device_dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'controller': {}, 'selected_device': {'device_name': '', 'device_type': ''}}
-<WSGIRequest: GET '/controller_selector/'>
-Request Method: GET
-Request POST: <QueryDict: {}>
-1
-device_dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'controller': {}, 'selected_device': {'device_name': '', 'device_type': ''}}
-<WSGIRequest: GET '/controller_selector/'>
-Request Method: GET
-Request POST: <QueryDict: {}>
-1
-device_dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'controller': {}, 'selected_device': {'device_name': '', 'device_type': ''}}
-<WSGIRequest: GET '/controller_selector/'>
-Request Method: GET
-Request POST: <QueryDict: {}>
-1
-device_dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'controller': {}, 'selected_device': {'device_name': '', 'device_type': ''}}
-<WSGIRequest: GET '/controller_selector/'>
-Request Method: GET
-Request POST: <QueryDict: {}>
-1
-device_dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'controller': {}, 'selected_device': {'device_name': '', 'device_type': ''}}
-<WSGIRequest: POST '/controller_selector/'>
-Request Method: POST
-Request POST: <QueryDict: {'csrfmiddlewaretoken': ['iBsaZo6aMIDJcWaVqTU2tXeKLDopMYkdV8cymaXlmAM7fHa1pbgfJhyLCnA4feTD'], 'device_id': ['1']}>
+2
+3
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'light_controller', 'selected_device': {'device_name': 'John', 'device_type': 'Light', 'device_state': ''}}
+<QueryDict: {'csrfmiddlewaretoken': ['UyVNqadUCHDBpxkJiCqdnPeTw4AAhKk3x5FbNW45czMZsikPhUMqD9yUnOMfK0Tt'], 'device_id': ['1']}>
 BEGIN: _identify_selected_device
 Device id: 1
 Device Selected: Devices object (1)
-Device Type: Camera
+Device Type: Lock
 END: _identify_selected_device
-2
-Device Name: Bob
-Device Type: Camera
 BEGIN: _identify_device_controller
-Camera TBC
-Controller Selected: camera_controller
+Lock TBC
+Controller Selected: lock_controller
 END: _identify_device_controller
-device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'controller': 'camera_controller', 'selected_device': {'device_name': 'Bob', 'device_type': 'Camera'}}
 1
-device_dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'controller': {}, 'selected_device': {'device_name': '', 'device_type': ''}}
-<WSGIRequest: GET '/controller_selector/'>
-Request Method: GET
-Request POST: <QueryDict: {}>
-1
-device_dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'controller': {}, 'selected_device': {'device_name': '', 'device_type': ''}}
-<WSGIRequest: POST '/controller_selector/'>
-Request Method: POST
-Request POST: <QueryDict: {'csrfmiddlewaretoken': ['tKQOc3iPhVNXYkTNZiG2GHR1ozC3pAOQ6hAczP90RNWl15TTYA2fW1b2fjOISQng'], 'device_id': ['8']}>
+2
+3
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'lock_controller', 'selected_device': {'device_name': 'Fish', 'device_type': 'Lock', 'device_state': ''}}
+<QueryDict: {'csrfmiddlewaretoken': ['4fRAy7ACEE56Ta0ZrnIGQfWsNcTs4Yy6HMBYVTrNeweuWV05qF4T6zgtEW57xe7w'], 'device_id': ['4']}>
 BEGIN: _identify_selected_device
-Device id: 8
-Device Selected: Devices object (8)
+Device id: 4
+Device Selected: Devices object (4)
+Device Type: Lock
+END: _identify_selected_device
+BEGIN: _identify_device_controller
+Lock TBC
+Controller Selected: lock_controller
+END: _identify_device_controller
+1
+2
+3
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'lock_controller', 'selected_device': {'device_name': 'Mark', 'device_type': 'Lock', 'device_state': ''}}
+<QueryDict: {'csrfmiddlewaretoken': ['OSLWGHdgVHdypp8tbfBBfXuJW2w7iOjkrpvk3t4rvzmWsa8zaxXOvhOKNMIML4SK'], 'device_id': ['1']}>
+BEGIN: _identify_selected_device
+Device id: 1
+Device Selected: Devices object (1)
+Device Type: Lock
+END: _identify_selected_device
+BEGIN: _identify_device_controller
+Lock TBC
+Controller Selected: lock_controller
+END: _identify_device_controller
+1
+2
+3
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'lock_controller', 'selected_device': {'device_name': 'Fish', 'device_type': 'Lock', 'device_state': ''}}
+<QueryDict: {'csrfmiddlewaretoken': ['Hr7CCMvAWKhUGk5uhhrCuKRncygaYRtAkYR0ZymLwCqiJ55AgzNPK4bo3isPr720'], 'device_id': ['1']}>
+BEGIN: _identify_selected_device
+Device id: 1
+Device Selected: Devices object (1)
+Device Type: Lock
+END: _identify_selected_device
+BEGIN: _identify_device_controller
+Lock TBC
+Controller Selected: lock_controller
+END: _identify_device_controller
+1
+2
+3
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'lock_controller', 'selected_device': {'device_name': 'Fish', 'device_type': 'Lock', 'device_state': ''}}
+<QueryDict: {'csrfmiddlewaretoken': ['j8F7gcQDN19QYl60kXIF2gZluDuL6DJtWFpvDYHOnTie1666jf4SiAjmlnGqzTiT'], 'device_id': ['4']}>
+BEGIN: _identify_selected_device
+Device id: 4
+Device Selected: Devices object (4)
+Device Type: Lock
+END: _identify_selected_device
+BEGIN: _identify_device_controller
+Lock TBC
+Controller Selected: lock_controller
+END: _identify_device_controller
+1
+2
+3
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'lock_controller', 'selected_device': {'device_name': 'Mark', 'device_type': 'Lock', 'device_state': ''}}
+<QueryDict: {'csrfmiddlewaretoken': ['bfZATT2rUbvxmNytgCeu9TS1IJsXEPWoOMJYgFTCu3EVpyyzfUAHpdc2ztEC75vO'], 'device_id': ['9']}>
+BEGIN: _identify_selected_device
+Device id: 9
+Device Selected: Devices object (9)
 Device Type: Light
 END: _identify_selected_device
-2
-Device Name: grape
-Device Type: Light
 BEGIN: _identify_device_controller
 Light Controller
 Controller Selected: light_controller
 END: _identify_device_controller
-device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Bob', 'device_type': 'Camera'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 8, 'device_name': 'grape', 'device_type': 'Light'}]>, 'controller': 'light_controller', 'selected_device': {'device_name': 'grape', 'device_type': 'Light'}}
+1
+2
+3
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'light_controller', 'selected_device': {'device_name': 'John', 'device_type': 'Light', 'device_state': ''}}
+<QueryDict: {'csrfmiddlewaretoken': ['dl0txzNGs405vXkJJn2K0Eatxsvn8iArQSKRUlER2W9tyIkPIFoXgYuuocH2By9R'], 'device_state': ['off']}>
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': {}, 'selected_device': {'device_name': '', 'device_type': '', 'device_state': ''}}
+<QueryDict: {'csrfmiddlewaretoken': ['zzY6v7CvrAwrCwytaZEy9PwkIQsbBRnhc6IuSTtG1sFPFhyz9h0Lp9QlzAEQ47WH'], 'device_id': ['1']}>
+BEGIN: _identify_selected_device
+Device id: 1
+Device Selected: Devices object (1)
+Device Type: Lock
+END: _identify_selected_device
+BEGIN: _identify_device_controller
+Lock TBC
+Controller Selected: lock_controller
+END: _identify_device_controller
+1
+2
+3
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'lock_controller', 'selected_device': {'device_name': 'Fish', 'device_type': 'Lock', 'device_state': ''}}
+<QueryDict: {'csrfmiddlewaretoken': ['VhJbNoCCcwjpyKmmPXTceJxjvOuQ506lyOtzaatNMosNBvmsOffpu3RkmyGvygFL'], 'device_id': ['4']}>
+BEGIN: _identify_selected_device
+Device id: 4
+Device Selected: Devices object (4)
+Device Type: Lock
+END: _identify_selected_device
+BEGIN: _identify_device_controller
+Lock TBC
+Controller Selected: lock_controller
+END: _identify_device_controller
+1
+2
+3
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'lock_controller', 'selected_device': {'device_name': 'Mark', 'device_type': 'Lock', 'device_state': ''}}
+<QueryDict: {'csrfmiddlewaretoken': ['mBVSvIWjotFxIkduWVYd0qZXzkmA4bThZ8FgSuNuYlOVL5dAVdkqgKjYq4yfxrsH'], 'device_id': ['1']}>
+BEGIN: _identify_selected_device
+Device id: 1
+Device Selected: Devices object (1)
+Device Type: Lock
+END: _identify_selected_device
+BEGIN: _identify_device_controller
+Lock TBC
+Controller Selected: lock_controller
+END: _identify_device_controller
+1
+2
+3
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'lock_controller', 'selected_device': {'device_name': 'Fish', 'device_type': 'Lock', 'device_state': ''}}
+<QueryDict: {'csrfmiddlewaretoken': ['Pe1JbBvGlBigAQqwpu2sAxwF9pHXrwrUsLL7ynmRVtrEDBqCoMoFQRQG09TCUM0k'], 'device_id': ['1']}>
+BEGIN: _identify_selected_device
+Device id: 1
+Device Selected: Devices object (1)
+Device Type: Lock
+END: _identify_selected_device
+BEGIN: _identify_device_controller
+Lock TBC
+Controller Selected: lock_controller
+END: _identify_device_controller
+1
+2
+3
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'lock_controller', 'selected_device': {'device_name': 'Fish', 'device_type': 'Lock', 'device_state': ''}}
+<QueryDict: {'csrfmiddlewaretoken': ['WkvLwnPMiGknx32ievtuE42y5ZwmsNbhzRf9T9GXSytLAO2odNPHUomzWJI1V3KH'], 'device_id': ['1']}>
+BEGIN: _identify_selected_device
+Device id: 1
+Device Selected: Devices object (1)
+Device Type: Lock
+END: _identify_selected_device
+BEGIN: _identify_device_controller
+Lock TBC
+Controller Selected: lock_controller
+END: _identify_device_controller
+1
+2
+3
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'lock_controller', 'selected_device': {'device_name': 'Fish', 'device_type': 'Lock', 'device_state': ''}}
+<QueryDict: {'csrfmiddlewaretoken': ['KZy6z9dVYIrxot5Tx00z0F4Pw3jOYwR0nwiuWV46yAAVre5ZwimMgZoQnNvtrMqq'], 'device_id': ['4']}>
+BEGIN: _identify_selected_device
+Device id: 4
+Device Selected: Devices object (4)
+Device Type: Lock
+END: _identify_selected_device
+BEGIN: _identify_device_controller
+Lock TBC
+Controller Selected: lock_controller
+END: _identify_device_controller
+1
+2
+3
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'lock_controller', 'selected_device': {'device_name': 'Mark', 'device_type': 'Lock', 'device_state': ''}}
+<QueryDict: {'csrfmiddlewaretoken': ['EjfY1DhezYJ5fykqxTpsef0uSfk2mhQZhQZmop8p9QStijkwwbLFuzkvJZwHPxpp'], 'device_id': ['9']}>
+BEGIN: _identify_selected_device
+Device id: 9
+Device Selected: Devices object (9)
+Device Type: Light
+END: _identify_selected_device
+BEGIN: _identify_device_controller
+Light Controller
+Controller Selected: light_controller
+END: _identify_device_controller
+1
+2
+3
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'light_controller', 'selected_device': {'device_name': 'John', 'device_type': 'Light', 'device_state': ''}}
+<QueryDict: {'csrfmiddlewaretoken': ['pWVUDhb0iBuZ6NucVOSLvXgN1nn0Xarn2tFi032bStDn9yuiU6eYLhAOS7zFqq0N'], 'device_id': ['1']}>
+BEGIN: _identify_selected_device
+Device id: 1
+Device Selected: Devices object (1)
+Device Type: Lock
+END: _identify_selected_device
+BEGIN: _identify_device_controller
+Lock TBC
+Controller Selected: lock_controller
+END: _identify_device_controller
+1
+2
+<QueryDict: {'csrfmiddlewaretoken': ['cP8wHZrDVtvnhuEcKFMiOoRi31pN5oAhPmSU4LiOvlELkfEiJX8v4IbjULBsyE9H'], 'device_id': ['1']}>
+BEGIN: _identify_selected_device
+Device id: 1
+Device Selected: Devices object (1)
+Device Type: Lock
+END: _identify_selected_device
+BEGIN: _identify_device_controller
+Lock TBC
+Controller Selected: lock_controller
+END: _identify_device_controller
+1
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'lock_controller', 'selected_device': {'device_name': 'Fish', 'device_type': 'Lock', 'device_state': ''}}
+<QueryDict: {'csrfmiddlewaretoken': ['f9zkOiwpExPpKhLIAnXWl17XfrGTPCXBSGjIb4nAepYNN2LOzFj9BlrY6bSyiSw1'], 'device_state': ['lock']}>
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'lock_controller', 'selected_device': {'device_name': 'Fish', 'device_type': 'Lock', 'device_state': 'lock'}}
+<QueryDict: {'csrfmiddlewaretoken': ['bNhFKciVtBTKsLlBHroCHjarp3T2yJRrOk137Y963t28vwlHGJKPXDusgN5H1ZqR'], 'device_id': ['4']}>
+BEGIN: _identify_selected_device
+Device id: 4
+Device Selected: Devices object (4)
+Device Type: Lock
+END: _identify_selected_device
+BEGIN: _identify_device_controller
+Lock TBC
+Controller Selected: lock_controller
+END: _identify_device_controller
+1
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'lock_controller', 'selected_device': {'device_name': 'Mark', 'device_type': 'Lock', 'device_state': ''}}
+<QueryDict: {'csrfmiddlewaretoken': ['bvFpVRg98ru80IeKt2qTumTlOb5LpKn2O2pNiD7kIjDw3teQskM6KGdmFVhqS0Ws'], 'device_state': ['unlock']}>
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'lock_controller', 'selected_device': {'device_name': 'Mark', 'device_type': 'Lock', 'device_state': 'unlock'}}
+<QueryDict: {'csrfmiddlewaretoken': ['F5iJ850QuNbn66Imk4Qr9zgAIhOqOtG3iC27vRR14FkL9RIsjmcEpTABz105hJft'], 'device_id': ['1']}>
+BEGIN: _identify_selected_device
+Device id: 1
+Device Selected: Devices object (1)
+Device Type: Lock
+END: _identify_selected_device
+BEGIN: _identify_device_controller
+Lock TBC
+Controller Selected: lock_controller
+END: _identify_device_controller
+1
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'lock_controller', 'selected_device': {'device_name': 'Fish', 'device_type': 'Lock', 'device_state': ''}}
+<QueryDict: {'csrfmiddlewaretoken': ['TubLLXOhNRwa8rVUgjHopQH6eomVe2sdw1V98JFsnJFybcV0fB3BFa1758yAHi1D'], 'device_state': ['lock']}>
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'lock_controller', 'selected_device': {'device_name': 'Fish', 'device_type': 'Lock', 'device_state': 'lock'}}
+<QueryDict: {'csrfmiddlewaretoken': ['Kkbq9oQyeT9uZ3EOBkLQqxSiHfW4uPMYnRVOwaHJOLiS2OEUAC73GRcjyZ8JX5lo'], 'device_state': ['unlock']}>
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'lock_controller', 'selected_device': {'device_name': 'Fish', 'device_type': 'Lock', 'device_state': 'unlock'}}
+<QueryDict: {'csrfmiddlewaretoken': ['HmZ7jdzCt6vz6ww2TyYrCvnOcZFSBWWHkTJvGZqN3YEX9hw8SQkESPHP3JRx4cv7'], 'device_state': ['lock']}>
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'lock_controller', 'selected_device': {'device_name': 'Fish', 'device_type': 'Lock', 'device_state': 'lock'}}
+<QueryDict: {'csrfmiddlewaretoken': ['tdUUGFNuey5lmhFt5VkDL5qdJPG8q1hE6KEi3rEFOqeJp2Fz4dGQ1pKeAzSNThQ4'], 'device_state': ['lock']}>
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'lock_controller', 'selected_device': {'device_name': 'Fish', 'device_type': 'Lock', 'device_state': 'lock'}}
+<QueryDict: {'csrfmiddlewaretoken': ['DlZfI2VsajxndcTsqwikzOhWmLuXluLvgSJD5OMDKbGLgXTypOExP8BXdvGCOKkV'], 'device_state': ['lock']}>
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'lock_controller', 'selected_device': {'device_name': 'Fish', 'device_type': 'Lock', 'device_state': 'lock'}}
+<QueryDict: {'csrfmiddlewaretoken': ['vK0w3oujCLHcGN1k8WI79lLnixH224fL8hKUqalucDQAJy1q7e4kpF5o9hTHvkOb'], 'device_id': ['4']}>
+BEGIN: _identify_selected_device
+Device id: 4
+Device Selected: Devices object (4)
+Device Type: Lock
+END: _identify_selected_device
+BEGIN: _identify_device_controller
+Lock TBC
+Controller Selected: lock_controller
+END: _identify_device_controller
+1
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'lock_controller', 'selected_device': {'device_name': 'Mark', 'device_type': 'Lock', 'device_state': ''}}
+<QueryDict: {'csrfmiddlewaretoken': ['i1oXKRQq7bxstHqYNNGnYjIZoG0k3HRfVy8l7DHBH3GQwsq4M52AeD20fqcZwXqF'], 'device_state': ['lock']}>
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'lock_controller', 'selected_device': {'device_name': 'Mark', 'device_type': 'Lock', 'device_state': 'lock'}}
+<QueryDict: {'csrfmiddlewaretoken': ['Pw0zc3JNWPggjPByAJZjOk5EYB0PO7kqs3KXzPAYwHpEmABEz1lw4EpFPlcuhnTQ'], 'device_state': ['unlock']}>
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'lock_controller', 'selected_device': {'device_name': 'Mark', 'device_type': 'Lock', 'device_state': 'unlock'}}
+<QueryDict: {'csrfmiddlewaretoken': ['3wU7QDSxtxSg4vCTb4emh7WC2jRwPBcoG3EvdpJI3p1E7gCZamAzxrgDT33biRLO'], 'device_id': ['1']}>
+BEGIN: _identify_selected_device
+Device id: 1
+Device Selected: Devices object (1)
+Device Type: Lock
+END: _identify_selected_device
+BEGIN: _identify_device_controller
+Lock TBC
+Controller Selected: lock_controller
+END: _identify_device_controller
+1
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'lock_controller', 'selected_device': {'device_name': 'Fish', 'device_type': 'Lock', 'device_state': ''}}
+<QueryDict: {'csrfmiddlewaretoken': ['iENtlhDlzkp9Kfh6ZlmYRSIwubjnM3UfVbxRI3uw9cyxN0hcYDIb7c2xlVv2fjtF'], 'device_state': ['lock']}>
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'lock_controller', 'selected_device': {'device_name': 'Fish', 'device_type': 'Lock', 'device_state': 'lock'}}
+<QueryDict: {'csrfmiddlewaretoken': ['jhIfgaERZk9m2xFEP10Whm4azDrk1RAVWOsDDWv2zciK5iFKOjm9xGobqnDZu79l'], 'device_state': ['unlock']}>
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'lock_controller', 'selected_device': {'device_name': 'Fish', 'device_type': 'Lock', 'device_state': 'unlock'}}
+<QueryDict: {'csrfmiddlewaretoken': ['rflpdge0lk0KKEAEi8GwjvrsjIuECrEK4M5NA25bVc98NpAKhq2JzPLtasGj5Hda'], 'device_id': ['1']}>
+BEGIN: _identify_selected_device
+Device id: 1
+Device Selected: Devices object (1)
+Device Type: Lock
+END: _identify_selected_device
+BEGIN: _identify_device_controller
+Lock TBC
+Controller Selected: lock_controller
+END: _identify_device_controller
+1
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'lock_controller', 'selected_device': {'device_name': 'Fish', 'device_type': 'Lock', 'device_state': ''}}
+<QueryDict: {'csrfmiddlewaretoken': ['CRUSc7f679Au6hQSoWYUnQR9oiKTpq98foEgzT6hH1JS92QYnek7Dabaf2WySGIy'], 'device_state': ['lock']}>
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'lock_controller', 'selected_device': {'device_name': 'Fish', 'device_type': 'Lock', 'device_state': 'lock'}}
+<QueryDict: {'csrfmiddlewaretoken': ['2E9MPLc7ZPpP0tVq8i75LNM8ASiezSCmFbTacx3izHyd3eVw7Ati1769rCuT28bM'], 'device_state': ['unlock']}>
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'lock_controller', 'selected_device': {'device_name': 'Fish', 'device_type': 'Lock', 'device_state': 'unlock'}}
+<QueryDict: {'csrfmiddlewaretoken': ['9ERkALRvDlI8OUNS1fXUYzDGcpCW4ltGMbBIXxIGddRwRFNY0xj7eTXH39OBxB26'], 'device_id': ['4']}>
+BEGIN: _identify_selected_device
+Device id: 4
+Device Selected: Devices object (4)
+Device Type: Lock
+END: _identify_selected_device
+BEGIN: _identify_device_controller
+Lock TBC
+Controller Selected: lock_controller
+END: _identify_device_controller
+1
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'lock_controller', 'selected_device': {'device_name': 'Mark', 'device_type': 'Lock', 'device_state': ''}}
+<QueryDict: {'csrfmiddlewaretoken': ['3fZdwltHVQD62pMCKWq0fyvwfKzK5RVlGMJBT7kSvIMu5aMIJeMdvSPx6uLpy7uL'], 'device_state': ['lock']}>
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'lock_controller', 'selected_device': {'device_name': 'Mark', 'device_type': 'Lock', 'device_state': 'lock'}}
+<QueryDict: {'csrfmiddlewaretoken': ['iW8Q5CoUzEuTLdWDcO12Ce8FgjFCQQJwVtSesof59wDhOYWJb6nfSysG73Rhj6iW'], 'device_id': ['9']}>
+BEGIN: _identify_selected_device
+Device id: 9
+Device Selected: Devices object (9)
+Device Type: Light
+END: _identify_selected_device
+BEGIN: _identify_device_controller
+Light Controller
+Controller Selected: light_controller
+END: _identify_device_controller
+1
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'light_controller', 'selected_device': {'device_name': 'John', 'device_type': 'Light', 'device_state': ''}}
+<QueryDict: {'csrfmiddlewaretoken': ['b3RiaFaLXc1zeOai0ovdPzl0IQ7T2pbYOABGxr1Wx4aXhzaoZGRq5TF1zAjyvFKo'], 'device_state': ['on']}>
+<QueryDict: {'csrfmiddlewaretoken': ['e0tRwL7M5UqrM0AuoImMdW6heFZv57doRxdfTxYXFMzPPLAAn0IZtgqi5pbaynMO'], 'device_id': ['9']}>
+BEGIN: _identify_selected_device
+Device id: 9
+Device Selected: Devices object (9)
+Device Type: Light
+END: _identify_selected_device
+BEGIN: _identify_device_controller
+Light Controller
+Controller Selected: light_controller
+END: _identify_device_controller
+1
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'light_controller', 'selected_device': {'device_name': 'John', 'device_type': 'Light', 'device_state': ''}}
+<QueryDict: {'csrfmiddlewaretoken': ['UK2LbVd5bukl47cIm4NcbISRjkMwpyrrxhM9yH4gLmtJ7ScOlm9pr2cSa4YbSO0R'], 'device_state': ['on']}>
+encode ON data and send
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'light_controller', 'selected_device': {'device_name': 'John', 'device_type': 'Light', 'device_state': 'on'}}
+<QueryDict: {'csrfmiddlewaretoken': ['1vr9eyBb78DHTo2jWDHBvVwBhZ4yxKxDE2bxBksmH0M5W92pVV3OLfQC8Jgd0063'], 'device_state': ['off']}>
+encode OFF data and send
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'light_controller', 'selected_device': {'device_name': 'John', 'device_type': 'Light', 'device_state': 'off'}}
+<QueryDict: {'csrfmiddlewaretoken': ['iPI0OgyaYRMlVxWqH7vFbiZlxpJ8wU1aVmsob2plyJVJYiWwGpRSrCjmo9VNZaAA'], 'device_state': ['on']}>
+encode ON data and send
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'light_controller', 'selected_device': {'device_name': 'John', 'device_type': 'Light', 'device_state': 'on'}}
+<QueryDict: {'csrfmiddlewaretoken': ['lnZMTnLBD6tYClhFLbyAOi2BHP3IC5RsYUJag9CMdYCmF6hLKtUN4CmCyzfn5lqS'], 'device_state': ['on']}>
+encode ON data and send
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'light_controller', 'selected_device': {'device_name': 'John', 'device_type': 'Light', 'device_state': 'on'}}
+<QueryDict: {'csrfmiddlewaretoken': ['ovtG3UamarcVYdaN6XPYXmH4XlPrQhwm12d4qG1xKjlj1YaT5fbbdG15O516jx5M'], 'device_state': ['off']}>
+encode OFF data and send
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'light_controller', 'selected_device': {'device_name': 'John', 'device_type': 'Light', 'device_state': 'off'}}
+<QueryDict: {'csrfmiddlewaretoken': ['0bkFiBvBILzqvSZuvkMf47CNe9hUN9fFDI43FnmMiDIOyDZAuC8skrWO5TtzgpO5'], 'device_state': ['off']}>
+encode OFF data and send
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'light_controller', 'selected_device': {'device_name': 'John', 'device_type': 'Light', 'device_state': 'off'}}
+<QueryDict: {'csrfmiddlewaretoken': ['VHc59QSvsPtYW8HAqsnlTzOJEcL07M8xyeWtwCJG2HCmZTHGpKJy9T8KvWXFA2HX'], 'device_id': ['4']}>
+BEGIN: _identify_selected_device
+Device id: 4
+Device Selected: Devices object (4)
+Device Type: Lock
+END: _identify_selected_device
+BEGIN: _identify_device_controller
+Lock TBC
+Controller Selected: lock_controller
+END: _identify_device_controller
+1
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'lock_controller', 'selected_device': {'device_name': 'Mark', 'device_type': 'Lock', 'device_state': ''}}
+<QueryDict: {'csrfmiddlewaretoken': ['KT5DbjxLh8pzUZYZtad3AlZDOi3Icq0xnqP1y5oWR0yXXKY5sszgQFjEF2fnFGzX'], 'device_state': ['lock']}>
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'lock_controller', 'selected_device': {'device_name': 'Mark', 'device_type': 'Lock', 'device_state': 'lock'}}
+<QueryDict: {'csrfmiddlewaretoken': ['8x8qbZHPkwBhMmVdsBQ3LxfRyae6z3nhL4SOyLy0UoKFP7VjrTcg1RzSpUqL2jWH'], 'device_state': ['unlock']}>
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'lock_controller', 'selected_device': {'device_name': 'Mark', 'device_type': 'Lock', 'device_state': 'unlock'}}
+<QueryDict: {'csrfmiddlewaretoken': ['tioIJFmAirEKC3l138MMpW0HOkrGoBIv6P866rdLSjN8FOl72q8ZFgkIF4DlRRhV'], 'device_state': ['lock']}>
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'lock_controller', 'selected_device': {'device_name': 'Mark', 'device_type': 'Lock', 'device_state': 'lock'}}
+<QueryDict: {'csrfmiddlewaretoken': ['Gg0LcWxhdWXbg67tJmyPsCZELq4FE9qQjNK9zIosNO6zjR7zIEU2IWjFCagk7pZg'], 'device_id': ['9']}>
+BEGIN: _identify_selected_device
+Device id: 9
+Device Selected: Devices object (9)
+Device Type: Light
+END: _identify_selected_device
+BEGIN: _identify_device_controller
+Light Controller
+Controller Selected: light_controller
+END: _identify_device_controller
+1
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'light_controller', 'selected_device': {'device_name': 'John', 'device_type': 'Light', 'device_state': ''}}
+<QueryDict: {'csrfmiddlewaretoken': ['rmVl6HVeNOQ2LMapFq3vdLNqaQvNWysW4TFJttMpnGZqOxavEIpIt57r1AHspO1m'], 'device_state': ['off']}>
+encode OFF data and send
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'light_controller', 'selected_device': {'device_name': 'John', 'device_type': 'Light', 'device_state': 'off'}}
+<QueryDict: {'csrfmiddlewaretoken': ['VRE7CeN8gAVmRaE7gMQM7Xkrfe9G0O25yoovZ0EjQs4KUVEdf4cZnhEs6Yllt4Bv'], 'device_state': ['on']}>
+encode ON data and send
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'light_controller', 'selected_device': {'device_name': 'John', 'device_type': 'Light', 'device_state': 'on'}}
+<QueryDict: {'csrfmiddlewaretoken': ['L3I7LwRBr78mV2xkGMsCQQT6V9n3UKCQoAsv8iIM1ZhKYNxqF4OP6ad7MTzIn0bg'], 'device_state': ['off']}>
+encode OFF data and send
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'light_controller', 'selected_device': {'device_name': 'John', 'device_type': 'Light', 'device_state': 'off'}}
+<QueryDict: {'csrfmiddlewaretoken': ['JMmaBz2WGqTHH4ownIM7TZCy1qiISkPBmj6yYlT7gi25KPoCm08k9jWzSaunlAo1'], 'device_id': ['1']}>
+BEGIN: _identify_selected_device
+Device id: 1
+Device Selected: Devices object (1)
+Device Type: Lock
+END: _identify_selected_device
+BEGIN: _identify_device_controller
+Lock TBC
+Controller Selected: lock_controller
+END: _identify_device_controller
+1
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'lock_controller', 'device': {'name': 'Fish', 'type': 'Lock', 'state': ''}}
+<QueryDict: {'csrfmiddlewaretoken': ['qlnDNXKU2fxGSjZBtqZMBKJr6QiTXyPC3S71aJB5C7G4V4ZHsIlZR43sXAuyqOo2'], 'device_state': ['lock']}>
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'lock_controller', 'device': {'name': 'Fish', 'type': 'Lock', 'state': 'lock'}}
+<QueryDict: {'csrfmiddlewaretoken': ['3Ba0nkQK5aTn9IcB68IHfbRMtgwQW0S7G8UoK6HVF22LctcH5q4UvvbNk0Ivpgrx'], 'device_state': ['unlock']}>
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'lock_controller', 'device': {'name': 'Fish', 'type': 'Lock', 'state': 'unlock'}}
+<QueryDict: {'csrfmiddlewaretoken': ['MoNYdBG99z5Hx2zjoaDY0cgD2ruR7f3xpVxmAnxkJre5ANzpnsZbgwAETbGwAvCX'], 'device_id': ['4']}>
+BEGIN: _identify_selected_device
+Device id: 4
+Device Selected: Devices object (4)
+Device Type: Lock
+END: _identify_selected_device
+BEGIN: _identify_device_controller
+Lock TBC
+Controller Selected: lock_controller
+END: _identify_device_controller
+1
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'lock_controller', 'device': {'name': 'Mark', 'type': 'Lock', 'state': ''}, 'device_selected': True}
+<QueryDict: {'csrfmiddlewaretoken': ['KTvc4qGIRfsyU0YDnMtsr2HavQf0xReMnqfArcxTr7BWXLYJm4PFHm1bmArF07Nc'], 'device_state': ['lock']}>
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'lock_controller', 'device': {'name': 'Mark', 'type': 'Lock', 'state': 'lock'}, 'device_selected': False}
+<QueryDict: {'csrfmiddlewaretoken': ['sgH3G857M9fq80ufkOdQhnM47vsKjoQM5Nrr3UWim1oObLulj6z3xH65YfEpMEpc'], 'device_id': ['4']}>
+BEGIN: _identify_selected_device
+Device id: 4
+Device Selected: Devices object (4)
+Device Type: Lock
+END: _identify_selected_device
+BEGIN: _identify_device_controller
+Lock TBC
+Controller Selected: lock_controller
+END: _identify_device_controller
+1
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'lock_controller', 'device': {'name': 'Mark', 'type': 'Lock', 'state': ''}, 'device_selected': True}
+<QueryDict: {'csrfmiddlewaretoken': ['frMyiSP4abA5EdaGU4jhFCiVt5QZ6gUtSYwWFEGfK3JtHYaMTmFuVWCWkP2EzwtT'], 'device_state': ['lock']}>
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'lock_controller', 'device': {'name': 'Mark', 'type': 'Lock', 'state': 'lock'}, 'device_selected': True}
+<QueryDict: {'csrfmiddlewaretoken': ['PqrYSJ95gUVoyOBwzqwR1g9yPSNOt5QfsXbmfv0gQM4MBzBCyIS4hAtzGCZtWlpF'], 'device_state': ['unlock']}>
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'lock_controller', 'device': {'name': 'Mark', 'type': 'Lock', 'state': 'unlock'}, 'device_selected': True}
+<QueryDict: {'csrfmiddlewaretoken': ['62IIfimmtfeBKl4bKzNXCNNMNiYXo7CyJzs6C4dx37nZN64hJR9aS77NE2aCRnbY'], 'device_id': ['1']}>
+BEGIN: _identify_selected_device
+Device id: 1
+Device Selected: Devices object (1)
+Device Type: Lock
+END: _identify_selected_device
+BEGIN: _identify_device_controller
+Lock TBC
+Controller Selected: lock_controller
+END: _identify_device_controller
+1
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'lock_controller', 'device': {'name': 'Fish', 'type': 'Lock', 'state': ''}, 'device_selected': True}
+<QueryDict: {'csrfmiddlewaretoken': ['o3JAQTDXGkItCS44TaRp0GyNvsFkcXVE1AtYdFu8gcRRFD4aSsdCg0SOmcRZFdu4'], 'device_state': ['lock']}>
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'lock_controller', 'device': {'name': 'Fish', 'type': 'Lock', 'state': 'lock'}, 'device_selected': True}
+<QueryDict: {'csrfmiddlewaretoken': ['KQ72GIk17jdpK5rdK6uEd8yeshNR4I5JnnRq3ubcHbmNNQrjJoQRtsSfj1ZwxYE9'], 'device_id': ['1']}>
+BEGIN: _identify_selected_device
+Device id: 1
+Device Selected: Devices object (1)
+Device Type: Lock
+END: _identify_selected_device
+BEGIN: _identify_device_controller
+Lock TBC
+Controller Selected: lock_controller
+END: _identify_device_controller
+1
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'lock_controller', 'device': {'name': 'Fish', 'type': 'Lock', 'state': ''}, 'device_selected': True, 'confirm_device_state': False}
+<QueryDict: {'csrfmiddlewaretoken': ['k5JTmthgU3RJfAbgDxi5o64vVL1hsuH7XCthJf8ruV07ilbmCPEiEqowMvdWVKgx'], 'device_state': ['lock']}>
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'lock_controller', 'device': {'name': 'Fish', 'type': 'Lock', 'state': 'lock'}, 'device_selected': True, 'confirm_device_state': True}
+<QueryDict: {'csrfmiddlewaretoken': ['vHHBJ2HWcm1BwGzaLmn2QhARS2g4dzj88erZ6Oy7MeaZzrzgKEJf6BUSJMsJGPSy'], 'device_state': ['unlock']}>
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'lock_controller', 'device': {'name': 'Fish', 'type': 'Lock', 'state': 'unlock'}, 'device_selected': True, 'confirm_device_state': True}
+<QueryDict: {'csrfmiddlewaretoken': ['4phIHSCE9EcP7WNjC3gPSFl8di07qgy7HW164EtPJwldaHNpBlC28ZF942cMTw7x'], 'device_id': ['4']}>
+BEGIN: _identify_selected_device
+Device id: 4
+Device Selected: Devices object (4)
+Device Type: Lock
+END: _identify_selected_device
+BEGIN: _identify_device_controller
+Lock TBC
+Controller Selected: lock_controller
+END: _identify_device_controller
+1
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'lock_controller', 'device': {'name': 'Mark', 'type': 'Lock', 'state': ''}, 'device_selected': True, 'confirm_device_state': False}
+<QueryDict: {'csrfmiddlewaretoken': ['VuDbjncGl4jDgQ6kt14NzC5BA5DNjJfly1nzG93RVWs1jB6qsjq0PWpCrPPsMZOL'], 'device_state': ['lock']}>
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'lock_controller', 'device': {'name': 'Mark', 'type': 'Lock', 'state': 'lock'}, 'device_selected': True, 'confirm_device_state': True}
+<QueryDict: {'csrfmiddlewaretoken': ['gif6n7sGpnGL46174836xqVeW1l9w3vrTPZuKTjRZfP97R1d3qpjNKffNLxOZj4R'], 'device_state': ['lock']}>
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'lock_controller', 'device': {'name': 'Mark', 'type': 'Lock', 'state': 'lock'}, 'device_selected': True, 'confirm_device_state': True}
+<QueryDict: {'csrfmiddlewaretoken': ['tS0xThhe8gjf12mU5DLmeDHWDUNl08xL6pKVg38pI8sD4Nm04V7zuX1XuEZ0to6b'], 'device_id': ['9']}>
+BEGIN: _identify_selected_device
+Device id: 9
+Device Selected: Devices object (9)
+Device Type: Light
+END: _identify_selected_device
+BEGIN: _identify_device_controller
+Light Controller
+Controller Selected: light_controller
+END: _identify_device_controller
+1
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'light_controller', 'device': {'name': 'John', 'type': 'Light', 'state': ''}, 'device_selected': True, 'confirm_device_state': False}
+<QueryDict: {'csrfmiddlewaretoken': ['6Y5sTUnkmaQL3adpCTfdRp1NrQpoU0BdJvPQgGevW2Z96VdvBbBq7JlOiAB3ngaD'], 'device_state': ['off']}>
+encode OFF data and send
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'light_controller', 'device': {'name': 'John', 'type': 'Light', 'state': 'off'}, 'device_selected': True, 'confirm_device_state': True}
+<QueryDict: {'csrfmiddlewaretoken': ['CwIdeXP3vBI40poRilSrw71zJHHWUViwf3sBBJGe5tRs3aoXhDeEMrlAArTBnbRW'], 'device_state': ['on']}>
+encode ON data and send
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'light_controller', 'device': {'name': 'John', 'type': 'Light', 'state': 'on'}, 'device_selected': True, 'confirm_device_state': True}
+<QueryDict: {'csrfmiddlewaretoken': ['f1UcvdMD9ve7GbO1AKENHjWbVz2lHBoKSyEASZDOJnnvJWO7z200XDgcMje0aRXa'], 'device_state': ['on']}>
+encode ON data and send
+device dict: {'all_devices': <QuerySet [{'id': 1, 'device_name': 'Fish', 'device_type': 'Lock'}, {'id': 4, 'device_name': 'Mark', 'device_type': 'Lock'}, {'id': 9, 'device_name': 'John', 'device_type': 'Light'}]>, 'controller': 'light_controller', 'device': {'name': 'John', 'type': 'Light', 'state': 'on'}, 'device_selected': True, 'confirm_device_state': True}
