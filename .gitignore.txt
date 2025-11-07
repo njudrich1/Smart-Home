@@ -2,3 +2,4 @@
 smart_home_v3/*.log
 smart_home_v3/control_panel/__pycache__/*.pyc
 smart_home_v3/db.sqlite3
+devices/__pycache__/*.pyc
