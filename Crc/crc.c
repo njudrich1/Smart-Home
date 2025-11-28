@@ -105,7 +105,8 @@ uint16_t crc16_multi_byte(uint8_t *data, int nbytes)
 
     printf("\n------------------------------------ BEGIN: crc16_multi_byte ------------------------------------\n");
     uint16_t crc_result = 0x0000;
-    uint16_t temp_crc = 0x0000;
+    uint16_t temp_crc = 0x0000; // Init CRC value (0x0000 or 0xFFFF depending on CRC)
+    uint16_t xor_out = 0x0000; // XorOut value (0x0000 or 0xFFFF depending on CRC)
 
     for(int byte = 0; byte < nbytes; byte++)
     {
@@ -124,10 +125,18 @@ uint16_t crc16_multi_byte(uint8_t *data, int nbytes)
 
         temp_crc = calc_crc_from_one_byte(temp_crc);
     }
-    crc_result = temp_crc;
+    crc_result = temp_crc ^ xor_out;
     printf("------------------------------------ END: crc16_multi_byte ------------------------------------\n\n");
 
     return crc_result;
+}
+
+int crc_data_check(uint16_t crc)
+{
+    /*
+        Function Description: Returns True if data has not been corrupted.
+    */
+    return (crc == 0)? 1: 0;
 }
 
 // USER TODO: Uncomment the desired operation to perform. Then uncomment a byte length
@@ -136,8 +145,8 @@ uint16_t crc16_multi_byte(uint8_t *data, int nbytes)
 //#define CHECK_CORRPT_MSG
 
 // USER TODO: Select the byte msg length
-#define ONE_BYTE_MSG
-//#define FOUR_BYTE_MSG
+//#define ONE_BYTE_MSG
+#define FOUR_BYTE_MSG
 
 
 int main() 
@@ -241,5 +250,15 @@ int main()
 
     printf("Data out: %#x\n", result);
 
+#ifdef CHECK_CORRPT_MSG
+    int corrupt_check = crc_data_check(result);
+    printf("Corrupt Check: %d\n", corrupt_check);
+    printf("Corrupt Check is 1 if the data is uncorrupted and 0 if it is corrupted");
+#endif
+#ifdef CHECK_UCORRPT_MSG
+    int corrupt_check = crc_data_check(result);
+    printf("Corrupt Check: %d\n", corrupt_check);
+    printf("Corrupt Check is 1 if the data is uncorrupted and 0 if it is corrupted");
+#endif
     return 0;
 }
