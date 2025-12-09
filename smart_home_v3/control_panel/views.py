@@ -2,6 +2,8 @@ from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from .models import Devices
 
+import serial
+
 import logging
 logger = logging.getLogger(__name__)
 
@@ -59,12 +61,22 @@ def controller_selector(request):
     return render(request, 'controller_selector.html', device_dict)
 
 def process_data(device_data):
+    ser = serial.Serial('COM5', 9600)
+    if not ser.is_open:
+        ser.open()
+    
     if device_data['controller'] == 'light_controller':
         if device_data['device']['state'] == "on":
+            #data = '1'
+            #frame = "s11&r"
             logger.debug("encode ON data and send")
         if device_data['device']['state'] == "off":
             logger.debug("encode OFF data and send")
-
+        #msg_length = str(len(data))
+        #frame = 's'+ msg_length + data + '&r'
+        #ser.write(frame.encode('utf-8))
+        #RX = ser.read(3)  # DBG
+        #logger.debug(f"Recieved Data: {RX}") # DBG
 
 # def light_controller(request):
 #     all_devices = Devices.objects.all().values()

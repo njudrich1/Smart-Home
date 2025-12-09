@@ -94,11 +94,13 @@ int main(void)
   const uint16_t INIT_CRC = 0x0000; // Initial CRC value - possible values 0x0000 or 0xFFFF depending on CRC type
   const uint16_t XOR_OUT = 0x0000;
   const uint8_t CRC_NUM_BYTES = 2;
+  const bool REFIN = false;
+  const bool REFOUT = false;
   // CRC Objects
-  Crc16 crc(0x0000, 0x1021, 0x0000);  // Declare the CRC object
+  Crc16 crc(INIT_CRC, REFIN, REFOUT, 0x1021, XOR_OUT);  // Declare the CRC object
   // Buffers
   uint16_t tmp_buffer_16 = 0x0000;    // Initialise temporary buffer, used to store the received data when converted from 8 bits to 16 bits
-  uint16_t temp_crc = INIT_CRC;  // Acts an the Initial CRC value and a temporary buffer for the CRC
+  uint16_t temp_crc = crc.get_init();  // Acts an the Initial CRC value and a temporary buffer for the CRC
   uint16_t crc_result = 0x0000; // Temporary buffer to store the final CRC value
 
   while(1)
@@ -127,13 +129,15 @@ int main(void)
           USART_Transmit(data_buffer[cnt]);
 
           // Calculate CRC
-          tmp_buffer_16 =  (uint16_t)data_buffer[cnt];
-          temp_crc = temp_crc ^ (tmp_buffer_16 << 8);
-          temp_crc = crc.checksum(temp_crc);
+          //tmp_buffer_16 =  (uint16_t)data_buffer[cnt];
+          //temp_crc = temp_crc ^ (tmp_buffer_16 << 8);
+          //temp_crc = crc.checksum(temp_crc);
+          temp_crc = crc.checksum(data_buffer[cnt], temp_crc, msg_length + CRC_NUM_BYTES);
           
           if (cnt == msg_length + CRC_NUM_BYTES)
           {
-            crc_result = temp_crc ^ XOR_OUT;
+            //crc_result = temp_crc ^ crc.get_xor_out();
+            crc_result = temp_crc;
 
             if (crc.verify(crc_result))
             {
@@ -144,7 +148,7 @@ int main(void)
             }
 
             cnt = 1;
-            temp_crc = INIT_CRC;
+            temp_crc = crc.get_init();
             state = s_wait_0x73;
           }
           else {
